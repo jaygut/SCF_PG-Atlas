@@ -25,11 +25,14 @@ This generated a dynamic, realistic dependency network spanning over 2,200 nodes
 2. **Criticality Score (A9):** 
    We evaluate systemic criticality by traversing the reversed directed dependency graph using a Breadth-First Search (BFS) to aggregate the count of active, transitive dependents. This structural reachability approach quantifies downstream impact boundaries—highlighting failure cascades.
 
-3. **Pony Factor and Risk Concentration (A9):** 
-   To measure maintenance vulnerability, we converted the discrete commit distribution into a continuous scoring system derived from the Herfindahl-Hirschman Index (HHI). Mapping contributor dominance to established economic compliance thresholds validates repository resilience dynamically.
+3. **Key-Person vs. Community Resilience Analysis (A9):** 
+   We explicitly decouple binary compliance from continuous vulnerability tracking by implementing three interlocking developer metrics:
+   - **Pony Factor (PF):** Serves as an operational step-function KPI computing the minimum number of developers required to reach 50% of the commits. Enables strict "Bus Factor > 1" organizational targeting.
+   - **Contributor HHI:** Derived from antitrust economics ($ \sum p_i^2 $), this concentration index is hypersensitive to the head of the distribution, providing a continuous leading indicator for Key-Person Risk before a repository degrades to PF=1.
+   - **Shannon Entropy:** Defined algorithmically as ($ -\sum p_i \ln(p_i) $), this information-theory metric is hypersensitive to the tail of the distribution, successfully quantifying the plurality and onboarding resilience of the broader open-source community.
 
 4. **Adoption Signals (A10):** 
-   Raw ecosystem indicators (stars, forks, package downloads) exhibit heavy-tailed distributions. The pipeline applies a base-10 logarithmic transformation prior to computing percentile ranks, ensuring that the composite Adoption Score is resistant to localized skew.
+   Raw ecosystem indicators (stars, forks, package downloads) exhibit heavy-tailed distributions. Rather than applying a mathematically redundant monotonic log-transformation, the pipeline natively computes population-wide percentiles directly from the raw data. This preserves strict ordinal ranking while maximizing computational efficiency.
 
 ## 2. Visual Output Summary
 

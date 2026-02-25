@@ -819,19 +819,20 @@ code('''
 # ── Pony Factor Computation ───────────────────────────────────────────────────
 
 @dataclass
-class PonyFactorResult:
+class ContributorRiskResult:
     repo: str
     pony_factor: int          # Binary: 1 = at risk
     hhi: float                # Continuous HHI (0–10,000)
+    shannon_entropy: float    # Continuous Shannon Entropy
     top_contributor: str
     top_contributor_share: float
     total_contributors: int
     total_commits: int
     risk_tier: str            # 'healthy' | 'moderate' | 'concentrated' | 'critical'
 
-def compute_pony_factors(G_active: nx.DiGraph) -> Dict[str, PonyFactorResult]:
+def compute_pony_factors(G_active: nx.DiGraph) -> Dict[str, ContributorRiskResult]:
     \"\"\"
-    Compute binary and HHI pony factor for every Repo node in the active subgraph.
+    Compute binary pony factor, HHI, and Shannon Entropy for every Repo node in the active subgraph.
     
     Uses the contributed_to edges and their 'commits' attribute.
     \"\"\"
@@ -865,6 +866,9 @@ def compute_pony_factors(G_active: nx.DiGraph) -> Dict[str, PonyFactorResult]:
         # HHI: sum of squared shares × 10,000
         hhi = sum(s**2 for _, s in shares) * 10_000
         
+        # Shannon Entropy: -sum(p * ln(p))
+        shannon_entropy = -sum(s * np.log(s) for _, s in shares if s > 0)
+        
         # Risk tier
         if hhi < 1500:
             risk_tier = 'healthy'
@@ -875,9 +879,11 @@ def compute_pony_factors(G_active: nx.DiGraph) -> Dict[str, PonyFactorResult]:
         else:
             risk_tier = 'critical'
         
-        results[repo] = PonyFactorResult(
+        results[repo] = ContributorRiskResult(
             repo=repo,
             pony_factor=pony_flag,
+            hhi=round(hhi, 1),
+            shannon_entropy=round(shannon_entropy, 3),
             hhi=round(hhi, 1),
             top_contributor=top_contrib,
             top_contributor_share=round(top_share, 3),
@@ -918,18 +924,18 @@ for tier in ['healthy', 'moderate', 'concentrated', 'critical']:
 print()
 print("⚠️  TOP 10 HIGHEST-RISK REPOS (sorted by HHI):")
 top_risk = sorted(pony_results.values(), key=lambda r: r.hhi, reverse=True)[:10]
-print(f"  {'Repo':<35} {'HHI':>7}  {'Top Contributor':<25} {'Share':>6}  {'Tier'}")
-print(f"  {'─'*35} {'─'*7}  {'─'*25} {'─'*6}  {'─'*12}")
+print(f"  {'Repo':<35}  {'PF':>2}  {'HHI':>7}  {'Shannon':>7}   {'Top Contributor':<20} {'Share':>6}  {'Tier'}")
+print(f"  {'─'*35}  {'─'*2}  {'─'*7}  {'─'*7}   {'─'*20} {'─'*6}  {'─'*12}")
 for r in top_risk:
     proj = G_active.nodes[r.repo].get('project', '')[:15]
-    print(f"  {r.repo[:35]:<35} {r.hhi:>7.0f}  {r.top_contributor[:25]:<25} {r.top_contributor_share:>5.0%}  {r.risk_tier}")
+    print(f"  {r.repo[:35]:<35}  {r.pony_factor:>2}  {r.hhi:>7.0f}  {r.shannon_entropy:>7.2f}   {r.top_contributor[:20]:<20} {r.top_contributor_share:>5.0%}  {r.risk_tier}")
 ''')
 
 # ── 8. ADOPTION SIGNALS (A10) ────────────────────────────────────────────────
 md('''
 ## 8. Adoption Signals (A10)
 
-Adoption signals (stars, forks, downloads) proxy the relevance of a package. We take the raw signals, apply log-scale normalization ($log_{10}(1 + x)$), and compute percentile ranks to produce a composite **Adoption Score** (0–100 percentile).
+Adoption signals (stars, forks, downloads) proxy the relevance of a package. Because purely ordinal rankings are invariant under monotonic transformations, we compute direct percentile distributions on the raw signals to produce a composite **Adoption Score** (0–100 percentile).
 ''')
 
 code('''
@@ -938,33 +944,25 @@ code('''
 adoption_records = []
 for node, data in G_active.nodes(data=True):
     if data.get('node_type') in ('Repo', 'ExternalRepo'):
-        # Extract signals
+        # Extract raw signals
         stars = data.get('stars', 0)
         forks = data.get('forks', 0)
         downloads = data.get('downloads', 0)
-        
-        # Log-scale normalization: log10(1 + x)
-        log_stars = np.log10(1 + stars)
-        log_forks = np.log10(1 + forks)
-        log_downloads = np.log10(1 + downloads)
         
         adoption_records.append({
             'node': node,
             'node_type': data.get('node_type'),
             'stars': stars,
             'forks': forks,
-            'downloads': downloads,
-            'log_stars': log_stars,
-            'log_forks': log_forks,
-            'log_downloads': log_downloads
+            'downloads': downloads
         })
 
 df_adopt = pd.DataFrame(adoption_records)
 
-# Compute percentile ranks for log-scaled values
-df_adopt['stars_pct'] = df_adopt['log_stars'].rank(pct=True) * 100
-df_adopt['forks_pct'] = df_adopt['log_forks'].rank(pct=True) * 100
-df_adopt['downloads_pct'] = df_adopt['log_downloads'].rank(pct=True) * 100
+# Compute percentile ranks directly on raw values (log-transform is mathematically redundant)
+df_adopt['stars_pct'] = df_adopt['stars'].rank(pct=True) * 100
+df_adopt['forks_pct'] = df_adopt['forks'].rank(pct=True) * 100
+df_adopt['downloads_pct'] = df_adopt['downloads'].rank(pct=True) * 100
 
 # Composite adoption score (average of percentiles)
 df_adopt['adoption_score'] = df_adopt[['stars_pct', 'forks_pct', 'downloads_pct']].mean(axis=1)
