@@ -1,0 +1,339 @@
+round,submission_title,github_url,total_awarded_usd,use_soroban,tranche_completion
+SCF #11,CISO/BEI Stellar integration,https://github.com/AnChainAI/BEI-Playground,195000.0,,
+SCF #18,Wombat Exchange,http://github.com/wombat-exchange,150004.63,,
+SCF #40,Stellar Passport - Seamless onboarding to the Stellar Ecosystem,https://github.com/alexanderkoh/passport-meridian,150000.0,Yes,Pre-Launch #0 - Awarded
+SCF #40,Private & compliant payments on Stellar,https://github.com/Fairblock,150000.0,"Maybe in the future, but not in this submission",Pre-Launch #0 - Awarded
+SCF #38,Transforming Aid Delivery with Stellar.,https://github.com/bp-ventures/retail-wallet,150000.0,"Maybe in the future, but not in this submission",Pre-Launch #1 - MVP
+SCF #38,Expand the Stellar Game Dev Ecosystem,https://github.com/beamable,150000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #38,Visa layer for stablecoins,https://github.com/RozoAI/rozo-tap-to-pay,150000.0,Yes,Pre-Launch #1 - MVP
+SCF #36,Splyce vault contracts build award,https://github.com/Splyce-Finance,150000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #35,Integrating into Cobo MPC and Bridge app,https://github.com/CoboGlobal,150000.0,"Maybe in the future, but not in this submission",Pre-Launch #0 - Awarded
+SCF #34,"Keys, Wallets and Identity for Stellar",https://github.com/holonym-foundation,150000.0,"Maybe in the future, but not in this submission",Pre-Launch #2 - Testnet
+SCF #34,Cross-chain Explorer & Intelligence,https://github.com/rangesecurity,150000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #33,StellarBroker - Launch,https://github.com/stellar-broker,150000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #32,Hermes: Stellar’s Own Perpetual Exchange,https://github.com/orbit-cdp/hermes,150000.0,Yes,Pre-Launch #1 - MVP
+SCF #31,The graph indexing stack integration of Stellar,https://github.com/streamingfast/substreams,150000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #31,Enabling a secondary market for RWAs on Stellar with Untangled Vault,https://github.com/untangledfinance,150000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #30,RampMeDaddy - Bringing Stellar Passkey Wallets to Telegram Globally,https://github.com/trustek-io/rampmedaddy-frontend/,150000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #16,Stellar/Soroban Public RPC infrastructure from Gateway.fm,https://github.com/gateway-fm,150000.0,,
+SCF #30,Stellar Integration for Rahat’s Open-Source Financial Access Platform,https://github.com/rahataid,149962.0,Yes,Pre-Launch #3 - Mainnet
+SCF #39,Formal specification language 4 Soroban,https://github.com/Inferara/inference-language-spec,149730.0,Yes,Pre-Launch #1 - MVP
+SCF #17,Slender,https://github.com/eq-lab,149250.0,,
+SCF #15,Reflector,https://github.com/hawthorne-abendsen/se-oracle-contract,148840.0,,
+SCF #15,Elio DAO,https://github.com/deep-ink-ventures,148200.0,,
+SCF #32,DPG Offline Smart Wallet on Stellar,https://github.com/xcapit/stellar-poc,147000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #17,Soroban & Aquarius,https://github.com/AquaToken,147000.0,,
+SCF #38,Vanna- A DeFi Prop Trading Protocol,https://github.com/vannafinance/Protocol_V1_Soroban,145000.0,Yes,Pre-Launch #0 - Awarded
+SCF #37,On-chain assets manager protocol,https://github.com/dogstarapps/arka.fund,144000.0,Yes,Pre-Launch #1 - MVP
+SCF #17,Ultra Stellar / Soroban Integration,https://github.com/Lobstrco,144000.0,,
+SCF #37,Dobprotocol: Validating RWA Funding,https://github.com/dobprotocol/dobvalidator,143330.0,Yes,Pre-Launch #1 - MVP
+SCF #18,Comet - Weighted Pool AMM,https://github.com/CometDEX,141000.0,,
+SCF #24,LOAM - Grow Ambitious Dapps,https://github.com/loambuild,140900.0,,
+SCF #30,EveryFinance: bringing Decentralized ETFs on Stellar,https://github.com/orgs/EveryFinance/repositories,140000.0,Yes,Pre-Launch #0 - Awarded
+SCF #30,Subs SDK: Scaling Global Subscriptions with Stellar Payments,https://github.com/Subs-Protocol,139480.0,Yes,Pre-Launch #3 - Mainnet
+SCF #17,Soroswap Protocol,https://github.com/soroswap,139150.0,,
+SCF #16,Mica,https://github.com/MicaTechnology/escrow_api,138700.0,,
+SCF #38,IRL: Global Loyalty Protocol for Culture,https://github.com/hurley87/refraction,137000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #33,Warmancer: Black Friday,https://github.com/towa-hi/solid-parakeet,136500.0,Yes,Pre-Launch #3 - Mainnet
+SCF #37,Mainnet Launch of Private Payments,https://github.com/Moonlight-Protocol,134990.0,Yes,Pre-Launch #1 - MVP
+SCF #31,Spydra-RWA Tokenization on Stellar,https://github.com/spydra-tech/onchainid,132000.0,Yes,Pre-Launch #1 - MVP
+SCF #39,Lumen Later: BNPL on Stellar,https://github.com/lumenlater/lumen-later,131550.0,Yes,Pre-Launch #2 - Testnet
+SCF #33,Funding Human Creativity,https://github.com/artizen-fund,130000.0,"Maybe in the future, but not in this submission",Pre-Launch #0 - Awarded
+SCF #34,Stellar on Unstoppable Wallet,https://github.com/horizontalsystems,128900.0,No,Pre-Launch #3 - Mainnet
+SCF #38,AeroChain: On-Chain Aerospace Components,https://github.com/SebWingleet/Aerochain-Stellar,128000.0,Yes,Pre-Launch #1 - MVP
+SCF #36,Flight Delay Parametric Insurance,https://github.com/SentinelFi#-sentinel-protocol-repositories,128000.0,Yes,Pre-Launch #1 - MVP
+SCF #19,Goldsky,https://github.com/indexed-xyz/docs,128000.0,,
+SCF #38,YieldBack.Cash,https://github.com/YieldBack-Cash/yieldback,125000.0,Yes,Pre-Launch #1 - MVP
+SCF #31,Implementing a self-custodial and compliant identity layer on Stellar,https://github.com/idos-network,125000.0,"Maybe in the future, but not in this submission",Pre-Launch #1 - MVP
+SCF #15,useSoroban.app II,https://github.com/orgs/useSoroban/repositories,124800.0,,
+SCF #34,Stellar Data Engine by Mobula,https://github.com/MobulaFi,122000.0,"Maybe in the future, but not in this submission",Pre-Launch #0 - Awarded
+SCF #38,Bringing Real-Time Analytics to Stellar,https://github.com/agnosticeng,121000.0,Yes,Pre-Launch #2 - Testnet
+SCF #39,Building African Borderless Finance,https://github.com/Rendbit/crossborderpayment,120000.0,"Maybe in the future, but not in this submission",Pre-Launch #1 - MVP
+SCF #35,Modular Data Pipelines for Stellar,https://github.com/withObsrvr/Flow,120000.0,Yes,Pre-Launch #1 - MVP
+SCF #31,Kura for cross-border payments,https://github.com/KuraApp/kura-core-api-stellar,120000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #31,Cede Labs: Unlocking liquidity between CeFi and DeFi effortlessly,https://github.com/cedelabs/sdk-examples,119800.0,"Maybe in the future, but not in this submission",Pre-Launch #1 - MVP
+SCF #40,Bringing Perpetuals on Stellar,https://github.com/quinn-eschenbach/stellars-finance,119300.0,Yes,Pre-Launch #1 - MVP
+SCF #38,"Keyless Stellar Wallet-Buy, Send, Invest",https://github.com/Mercury-Labs-Dev/SollPay-Protocol,118000.0,Yes,Pre-Launch #2 - Testnet
+SCF #34,Laina to mainnet!,https://github.com/laina-defi/laina,115000.0,Yes,Pre-Launch #1 - MVP
+SCF #35,Lumen Loop Launch,https://github.com/lumenloop,113400.0,"Maybe in the future, but not in this submission",Pre-Launch #1 - MVP
+SCF #31,Bebop,https://github.com/christopherkarani/Tuma,112970.0,Yes,Pre-Launch #3 - Mainnet
+SCF #40,Boundless on Stellar,https://github.com/boundlessfi,110000.0,Yes,Pre-Launch #0 - Awarded
+SCF #37,DomiPago: Chat-Based Stellar Remittances,https://github.com/melomar10/stellar_integration,110000.0,Yes,Pre-Launch #1 - MVP
+SCF #36,Lobster: Cross-DEX Yield Optimization,https://github.com/Lobster-Protocol,109000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #37,AI Agent Toolkit: Soroban to MCP,https://github.com/JoseCToscano/stellar-ai-demo,108000.0,Yes,Pre-Launch #2 - Testnet
+SCF #36,LiquidsFi: Bridge and Cross-Chain Oracle,https://github.com/liquidsfi,108000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #17,Arcturus,https://github.com/Soneso/Arcturus,105120.0,,
+SCF #31,EquitX - Phase 2,https://github.com/EquitXCompany/equitx-project,105000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #18,Chaincerts,https://github.com/kommitters/chaincerts-smart-contracts,103125.0,,
+SCF #19,Litemint,https://github.com/litemint,103110.9,,
+SCF #40,Collaborative AI Security for Stellar,https://github.com/Bevor-Protocol,102000.0,Yes,Pre-Launch #0 - Awarded
+SCF #35,Finalizing Stablecoin AMM Build,https://github.com/allbridge-io/dex-soroban-contracts/,102000.0,Yes,Pre-Launch #0 - Awarded
+SCF #40,Protecting the Broader Stellar Ecosystem,https://github.com/chainpatrol,100000.0,"Maybe in the future, but not in this submission",Pre-Launch #0 - Awarded
+SCF #36,Universal Payroll Infrastructure,https://github.com/PayZoll-Orgs/PayZoll-1.0.0-P2,100000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #30,Komet: Formal Verification by Runtime Verification,https://github.com/runtimeverification/komet,100000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #30,Risk-Assessed Analytics and Automated Liquidity Management,"https://github.com/alexanderkoh/hoops-UI, https://github.com/Hoops-Finance",100000.0,Yes,Pre-Launch #2 - Testnet
+SCF #30,Stellar zkCrossDEX,https://github.com/zkCross-Network,100000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #29,Reflector DAO,https://github.com/reflector-network,100000.0,,
+SCF #29,Soroban full-featured indexer,"https://github.com/decentrio/soro-book, https://github.com/decentrio/sorobook-api, github.com/decentrio/xdr-converter",100000.0,,
+SCF #29,Digicus - from MVP to 1.0,https://github.com/robertDurst/digicus,100000.0,,
+SCF #29,BondHive:OnChain Fixed Deposit,https://github.com/Bond-Hive,100000.0,,
+SCF #28,DeFindex: DeFi Made Easy,https://github.com/paltalabs/,100000.0,,
+SCF #26,Reflector | CEX price feeds,https://github.com/reflector-network,100000.0,,
+SCF #26,Ortege AI,https://github.com/Ortege-xyz,100000.0,,
+SCF #25,The Mercury Ecosystem,https://github.com/xycloo,100000.0,,
+SCF #23,Constellation Protocol,https://github.com/constellation-protocol/constellation-protocol,100000.0,,
+SCF #23,Scout - BugFighter for Soroban,https://github.com/CoinFabrik/scout-soroban,100000.0,,
+SCF #23,Soroban Explorer II,https://github.com/sorobanexp/explorer,100000.0,,
+SCF #23,Allbridge Core II,https://github.com/allbridge-io,100000.0,,
+SCF #21,Soroswap.Finance Aggregator,https://github.com/soroswap/,100000.0,,
+SCF #20,Phoenix Hub v2,https://github.com/Phoenix-Protocol-Group,100000.0,Yes,
+SCF #11,Spacewalk,https://github.com/pendulum-chain/spacewalk,100000.0,,
+SCF #27,Formal VerSo - Phase 3,https://github.com/GaloisInc/formal-verso,99875.0,,
+SCF #23,Formal VerSo - Phase 1,https://github.com/GaloisInc/formal-verso,99825.0,,
+SCF #29,Beans app - Cards & passkeys,https://github.com/Beans-BV,99740.0,,
+SCF #30,Tansu - Bringing developers communities on-chain,https://github.com/tupui/soroban-versioning,99360.0,Yes,Pre-Launch #3 - Mainnet
+SCF #32,"After Activation, lets Build Eascrow !",https://github.com/Eascrow/Eascrow,99050.0,Yes,Pre-Launch #3 - Mainnet
+SCF #18,SubQuery Network,https://github.com/subquery/subql,98640.0,,
+SCF #21,Slender Lending protocol,"https://github.com/eq-lab/Slender/tree/develop,",97500.0,,
+SCF #20,SorobanPulse v2,https://github.com/CrossChainLabs-Stellar/sorobanpulse-webapp,97500.0,,
+SCF #30,Galaxy Ramp - fiat onramp to any token on Stellar,https://github.com/coindisco,96000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #30,Token Tails - Play to Save gaming franchise that is all around cats,https://github.com/zbagdzevicius/tokentails,96000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #21,Planet Pay (ex-Stellar Flow),https://github.com/ScaleMote/flow,96000.0,,
+SCF #20,Reflector | Expansion,https://github.com/orgs/reflector-network/repositories,96000.0,,
+SCF #31,SiBorg: The Future of Sponsorship through Tokenized Advertising Spaces,https://github.com/siborg-ads/dsponsor-contracts,95900.0,Yes,Pre-Launch #2 - Testnet
+SCF #35,Cross-Chain Interop: Oracles to Tokens,https://github.com/VIALabs-io,95000.0,Yes,Pre-Launch #2 - Testnet
+SCF #32,Almanax - AI Security Agents,https://github.com/almanax-ai/almanax,95000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #29,BorderDollar - Invoice Finance,https://github.com/BorderDollar/BorderDollarApp,95000.0,,
+SCF #23,SoroSplits II,https://github.com/findolor/sorosplits-contracts,94000.0,,
+SCF #23,Aquarius AMM Launch on Soroban,https://github.com/AquaToken,94000.0,,
+SCF #35,Instant payments on Pix with USDC,https://github.com/abroad-finance/abroad,93700.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #40,Crypto Lombard Credit on Stellar,https://github.com/legasicrypto/borrowing-protocol,93660.0,Yes,Pre-Launch #0 - Awarded
+SCF #16,Lightecho Stellar Oracle,https://github.com/bp-ventures/lightecho-stellar-oracle,93110.0,,
+SCF #15,Pluto Loans B2B,https://github.com/PlutoDAO,92700.0,,
+SCF #30,"Trustful v1 – System Decentralization, Quadradic Funding Reputation Based, Community Incentives and Developer Resources",https://github.com/blockful-io/trustful-stellar-dapp,92000.0,Yes,Pre-Launch #1 - MVP
+SCF #38,DeFi UX & Cross-Chain Lending on Soroban,https://github.com/PeridotFinance/Peridot-Soroban/tree/main,91750.0,"Maybe in the future, but not in this submission",Pre-Launch #2 - Testnet
+SCF #33,CodeLn Pay for Crypto Payroll,https://github.com/CodelnGhana/codelnpay-project,90100.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #40,DeFarm: Turn Farm Assets into Liquidity,https://github.com/defarm-repo,90000.0,Yes,Pre-Launch #0 - Awarded
+SCF #40,Eara: RWA Regulated Engine on Soroban,https://github.com/LUNARxy/EARA-Blockchain,90000.0,Yes,Pre-Launch #0 - Awarded
+SCF #38,Seamless Stellar Cross-Chain Swaps,https://github.com/Cryptorubic,90000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #27,Scout - BugFighter for Soroban,https://github.com/CoinFabrik/scout-soroban,90000.0,,
+SCF #26,Expand Phase 2 Integration,https://github.com/expand-network/sdk-nodejs.git,90000.0,,
+SCF #24,Perun Cross-Chain Swaps,https://github.com/perun-network/perun-stellar-backend,90000.0,,
+SCF #36,Making money move on Stellar,https://www.github.com/globachain,89000.0,"Maybe in the future, but not in this submission",Pre-Launch #1 - MVP
+SCF #35,MUWP: Cross-Chain Liquidity SDK,https://github.com/Muwpay-uniswapper/Muwp-Stellar/tree/main,88850.0,Yes,Pre-Launch #0 - Awarded
+SCF #17,Excellar,https://github.com/scifecap/excellar,88750.0,,
+SCF #32,SocketFi: Soroban Smart Wallet App,https://github.com/orgs/Socket-Fi/repositories,88200.0,Yes,Pre-Launch #3 - Mainnet
+SCF #22,LOBSTR: new Soroban features,https://github.com/Lobstrco,88000.0,,
+SCF #28,WAVY by LINK,https://github.com/linkioafrica/wavy_soroban_contract,87000.0,,
+SCF #24,Dogstar League,https://github.com/dogstarcoin/,86450.0,,
+SCF #25,Private Payments on Soroban,https://github.com/zkbricks/,85000.0,,
+SCF #17,Perun State Channels,https://github.com/hyperledger-labs/go-perun,84800.0,,
+SCF #32,Stellar Attestation (Proofs & Notaries),https://github.com/daccred/attest.so,83050.0,Yes,Pre-Launch #3 - Mainnet
+SCF #21,Fluxity,https://github.com/fluxitystellar,82750.0,,
+SCF #22,Borderless Payments,https://github.com/elsa-care,82500.0,,
+SCF #25,Hana Wallet: Defi Integrations,https://github.com/Hana-Technology,82000.0,,
+SCF #13,useSoroban.app,https://github.com/useSoroban,82000.0,,
+SCF #36,Blux React &amp; JS packages and Dashboard,https://github.com/bluxcc,81000.0,Yes,Pre-Launch #1 - MVP
+SCF #39,Bounty Automation for OSS,https://github.com/devasignhq/devasign-api,80000.0,Yes,Pre-Launch #2 - Testnet
+SCF #35,Normal - Wrapped Assets,https://github.com/normalfinance/normal-v1-stellar,80000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #29,OrbitCDP,https://github.com/orbit-cdp,80000.0,,
+SCF #24,Kwickbit: Corp DeFi Accounting,https://github.com/kwickbit,80000.0,,
+SCF #24,Soroban Governor,https://github.com/script3/soroban-governor,80000.0,,
+SCF #35,Social Impact Crowdfunding,https://github.com/kindfi-org/kindfi,79998.0,Yes,Pre-Launch #1 - MVP
+SCF #16,Smart Deploy,https://github.com/TENK-DAO/smart-deploy,79900.0,,
+SCF #40,ApiCharge - ML and AI,https://github.com/StreamCharge/ApiCharge/issues,79000.0,Yes,Pre-Launch #1 - MVP
+SCF #16,Dogstar,https://github.com/dogstarcoin,78957.5,,
+SCF #37,Ben Platform,https://github.com/Ben-Platform,77910.0,Yes,Pre-Launch #0 - Awarded
+SCF #25,Sora,https://github.com/tolgayayci/sora,77500.0,,
+SCF #19,AssetDesk,https://github.com/AssetDesk,77000.0,,
+SCF #31,Implement the Swift Wallet SDK,https://github.com/Soneso/stellar-swift-wallet-sdk,76800.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #20,CommuniDAO - A NFT Member DAO,https://github.com/communiDAO,75600.0,,
+SCF #34,Jetpad,https://github.com/V-Blaze/jetpad-wallet,75500.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #37,ROSEN: Global Micro-Earning with Stellar,https://github.com/GoROSEN/rosen-stellar,75000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #31,Decentralized Workflow Orchestration for Stellar: Empowering Blockchain Use Cases with Seamless Workflows,https://github.com/k3-labs,75000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #30,Music Meets Smart Contracts,https://github.com/skyhitz,75000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #14,Smart Deploy,https://github.com/TENK-DAO/smart-deploy,75000.0,,
+SCF #37,Developer APIs for Stellar Adoption,https://github.com/adamikhq,74800.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #26,Governance Modules Library,https://github.com/BlockScience/SCF-GML-Contributions,74000.0,,
+SCF #14,Stellar Dao Discord Bot,https://github.com/CommuniDAO/stellar-badge-discord-bot,74000.0,,
+SCF #32,"Make Money Move, Freelii",https://github.com/JoseCToscano/freelii/,72500.0,Yes,Pre-Launch #3 - Mainnet
+SCF #29,CLOB DEX,https://github.com/Stogniev/CLOB-DEX-Collateral,72019.0,,
+SCF #29,Balanced to Stellar - Relay 2,"https://github.com/icon-project/xcall-multi, https://github.com/balancednetwork, https://github.com/icon-project/centralized-relay",72000.0,,
+SCF #19,Mercury,https://github.com/xycloo/rs-ingest,72000.0,,
+SCF #19,Stellar On Metamask,https://github.com/paulfears/StellarSnap,71000.0,,
+SCF #38,Choppadi Food & Grocery Delivery (FKA Fastbuka),https://github.com/fastbuka,70000.0,"Maybe in the future, but not in this submission",Pre-Launch #1 - MVP
+SCF #35,Liquid retrofunding that grows DEX TVL,https://github.com/SpinachFi/spinach,70000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #34,Greep Pay,https://github.com/GreepPay,70000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #31,Normal Protocol,https://github.com/normalfinance/normal-v1,70000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #31,Escrow-as-a-service platform on Soroban,https://github.com/Tico4Chain-Coders,70000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #16,CommuniDAO - The Stellar Discord Dao Bot,https://github.com/communidao,69600.0,,
+SCF #29,Solarkraft,https://github.com/freespek/solarkraft,67000.0,,
+SCF #35,Powering Stellar Liquidity,https://github.com/hunnykumar/SwiftEx/tree/feature/TestNetWallet,65000.0,"Maybe in the future, but not in this submission",Pre-Launch #2 - Testnet
+SCF #29,Soroban Samba - Educational,https://github.com/nrxschool/stellar-bootcamp,65000.0,,
+SCF #33,Stellarcarbon Launch,https://github.com/stellarcarbon/,62000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #30,Nodies Web3 Infra Services,https://github.com/baaspoolsllc,62000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #21,SorobanLearn,https://github.com/Soroban-Learn/soroban-learn-new,62000.0,,
+SCF #35,Stellar x Autopilot integration,https://github.com/getaxal/,60800.0,"Maybe in the future, but not in this submission",Pre-Launch #0 - Awarded
+SCF #40,OSS dev hub for the Stellar community,https://github.com/GrantChain/GrantFox-OSS,60000.0,Yes,Pre-Launch #0 - Awarded
+SCF #39,Development of soroban-sdk-tools,https://github.com/BlaineHeffron/soroban-sdk-tools,60000.0,Yes,Pre-Launch #1 - MVP
+SCF #38,Farm-to-Market with Stellar NGNC,https://github.com/JosephFashola/agtrail-eco-trace,60000.0,"Maybe in the future, but not in this submission",Pre-Launch #1 - MVP
+SCF #38,Websoroban: Only onchain IDE,https://github.com/orgs/WebSoroban/repositories,60000.0,Yes,Pre-Launch #0 - Awarded
+SCF #35,Billy Wallet for Aid Assist,https://github.com/dorahacker/Billy-Stellar-Wallet,60000.0,"Maybe in the future, but not in this submission",Pre-Launch #1 - MVP
+SCF #35,AirGap x Stellar : Secure Self Custody,https://github.com/airgap-it,60000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #32,"Global payment; fiat, NFC cards & crypto",https://github.com/palremit,60000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #31,SDEX Tools for Razor and Blazor,https://github.com/lockb0x-llc/SDEX-Razor-Components,60000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #31,Stellar multi-chain interoperability,https://github.com/rango-exchange,60000.0,Yes,Pre-Launch #0 - Awarded
+SCF #30,Deploy TokenOps platform on Stellar,https://github.com/VestingLabs,60000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #21,LumosDAO,https://github.com/naveed-siddiqi/lumos-dao/tree/smart-contract,60000.0,,
+SCF #16,Band Protocol Oracle Solution,https://github.com/bandprotocol,60000.0,,
+SCF #24,PHP Anchor SDK,https://github.com/Argo-Navis-Dev/php-anchor-sdk,58200.0,,
+SCF #27,PHP Anchor SDK,https://github.com/Argo-Navis-Dev/php-anchor-sdk,58000.0,,
+SCF #15,Soroswap Protocol,https://github.com/esteblock/soroswap,57600.0,,
+SCF #32,Payment interoperability for wallets,https://github.com/hollwann/abroad-stellar,56120.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #38,SFx Super Money app,https://github.com/InfluencerSFX/SFX-MOBILE-APP-VERSION-2.1-Current,55000.0,"Maybe in the future, but not in this submission",Pre-Launch #1 - MVP
+SCF #36,Launching South Africa & Nigeria,https://github.com/orgs/RemittEase-Dev-Team/repositories,54050.0,Yes,Pre-Launch #1 - MVP
+SCF #40,Stellar Payments for Devs & Marketplaces,https://github.com/usepaykit/stellar-tools,53450.0,"Maybe in the future, but not in this submission",Pre-Launch #0 - Awarded
+SCF #15,Soroban Smart Option Contract (Part 2),https://github.com/blocktimefinancial/option,51500.0,,
+SCF #40,Making crypto feels like money,https://github.com/Splitoio,50000.0,"Maybe in the future, but not in this submission",Pre-Launch #0 - Awarded
+SCF #39,Stallion,https://github.com/stallionsassemble/stallion-contract,50000.0,Yes,Pre-Launch #1 - MVP
+SCF #38,Hito Wallet - SCF 38,https://github.com/mishabunte/,50000.0,Yes,Pre-Launch #1 - MVP
+SCF #37,Stellar Transaction Visualizer,https://github.com/NibrasD/Stellar-Transaction-Visualizer,50000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #32,"DeFindex: Mainnet, Metrics & Keepers",https://github.com/paltalabs/defindex,50000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #29,Copperx - Gateway and Payout,https://github.com/copperxhq,50000.0,,
+SCF #29,Hoops Finance,https://github.com/alexanderkoh/hoops; https://github.com/silence48/soroban-typescript-indexer,50000.0,,
+SCF #28,Gearup - Marketplace,https://github.com/Gearup-Market,50000.0,,
+SCF #28,Giveth,https://github.com/Giveth/giveth-dapps-v2,50000.0,,
+SCF #28,Neovestor - An RWA launchpad,https://github.com/neovestor-tech,50000.0,,
+SCF #28,Wagmi.sh for Soroban,https://github.com/OmniLumen/omnilumen-core.git,50000.0,,
+SCF #28,Web3 Antivirus (W3A),https://github.com/web3-antivirus/chrome-extension,50000.0,,
+SCF #27,GrantPicks by PotLock,https://github.com/PotLock/grantpicks-stellar,50000.0,,
+SCF #27,Huma Protocol Smart Contract,"Soroban source code is not open sourced yet. For your reference, here’s the URL for the Solidity version: https://github.com/00labs/huma-contracts-v2.",50000.0,,
+SCF #27,Aquarius Soroban Yield Bridge,https://github.com/AquaToken,50000.0,,
+SCF #27,RaumFi DEX by Raum Network,https://github.com/Raum-Network,50000.0,,
+SCF #26,Digicus,https://github.com/spaced-out-thoughts-dev-foundation/digicus,50000.0,,
+SCF #26,Solo Labs Automated Liquidity,https://github.com/ichifarm,50000.0,,
+SCF #25,Blade: TradFi to DeFi Bridge,https://github.com/Blade-Labs,50000.0,,
+SCF #25,Connecting Balanced to Stellar,"https://github.com/icon-project/xcall-multi, https://github.com/balancednetwork, https://github.com/icon-project/centralized-relay",50000.0,,
+SCF #25,Stellar zkCrossDEX,https://github.com/zkCross-Network,50000.0,,
+SCF #24,Solarkraft: runtime monitoring,https://github.com/freespek/solarkraft,50000.0,,
+SCF #23,Soroban contracts with secrets,https://github.com/zkbricks/mpc-zexe/,50000.0,,
+SCF #22,Hana Wallet,https://github.com/Hana-Technology,50000.0,,
+SCF #20,DeRisk - Monitoring DeFi risks,https://github.com/CarmineOptions/derisk-research/,50000.0,,
+SCF #20,Formal VerSo,https://github.com/GaloisInc/saw-script,50000.0,,
+SCF #20,Allbridge Core,https://github.com/allbridge-io,50000.0,,
+SCF #24,Legacy Suite on Stellar,https://github.com/Avento-Labs/legacy-suite-contracts,49998.0,,
+SCF #29,Globachain Payment Ecosystem,https://github.com/Blocverse01/Globachain-DApp,49500.0,,
+SCF #29,USDC payments for LatAm stores,https://github.com/ernestocontrer/SFC-15Tracker,49300.0,,
+SCF #20,ChainsAtlas/VirtualizationUnit,https://github.com/ChainsAtlas,49240.0,,
+SCF #29,Chrysalis,https://github.com/Raum-Network,49040.0,,
+SCF #34,Scalable Currency Tool for Govs & NGOs,https://github.com/comunitaria/Comunitaria-wallet-dashboard,49000.0,Yes,Pre-Launch #1 - MVP
+SCF #14,Stellar Flow,https://github.com/ScaleMote/flow,48773.28,,
+SCF #29,Lantern Finance XLM Expansion,https://github.com/lanternfi,48483.0,,
+SCF #28,Tansu - Soroban Versioning,https://github.com/tupui/soroban-versioning,48000.0,,
+SCF #27,Orally Network,https://github.com/orally-network,48000.0,,
+SCF #22,Stellar RUST SDK Phase II,https://github.com/Baseflow/stellar-rust-sdk,48000.0,,
+SCF #22,Estrela,https://github.com/allbridge-io,48000.0,,
+SCF #21,Keizai,github.com/keizai-tools/,47300.0,,
+SCF #29,SoroStarter: Soroban LaunchPad,https://github.com/orgs/SoroStarter/repositories,47175.0,,
+SCF #40,Stellar Unity Developer Kit,https://github.com/towa-hi/solid-parakeet,47000.0,Yes,Pre-Launch #0 - Awarded
+SCF #24,Expand Stellar Integration,https://github.com/expand-network/sdk-nodejs.git,47000.0,,
+SCF #29,THE HUB Citizens Portal,https://github.com/thehubdao,46500.0,,
+SCF #17,Emigro,https://github.com/EmigroBR,46400.0,,
+SCF #26,MUWP - Unleash Stellar’s DeFi,https://github.com/Muwpay-uniswapper/Muwp-Stellar/tree/main,45100.0,,
+SCF #40,Meria DeFi Stellar Integration,https://github.com/meria-finance,45000.0,Yes,Pre-Launch #0 - Awarded
+SCF #33,Connecting Africa via XLM payments,https://github.com/PeerPesa/Stellar.PeerPESA,45000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #33,Community Crowdfunding & Microloans,https://github.com/thegivehub,45000.0,Yes,Pre-Launch #2 - Testnet
+SCF #23,"Gladius: play, learn, earn",https://github.com/orgs/GladiusClub/repositories,45000.0,,
+SCF #22,KYC Token & UI for RWA,https://github.com/tigerblocks/BBF,45000.0,,
+SCF #26,Komunitin,https://github.com/komunitin/komunitin/,44850.0,,
+SCF #21,Cross-chain Stellar bridging,https://github.com/BoostyLabs/tricorn,44700.0,,
+SCF #36,Soroban Security Catalogue,https://github.com/Inferara/soroban-security-catalogue,44190.0,Yes,Pre-Launch #3 - Mainnet
+SCF #26,Wagent,https://github.com/fluxitystellar,43400.0,,
+SCF #27,Soroban  Polygon - Interop,We will leverage Wanchain code for crosschain communication : https://github.com/wanchain/message-bridge-contracts,42755.0,,
+SCF #29,Soroban AIssistant,https://github.com/luisao8/Soroban-code-AIssistant.git,42500.0,,
+SCF #18,AS Soroban SDK,https://github.com/Soneso,41860.0,,
+SCF #28,Keizai V2.0,https://github.com/keizai-tools/,41000.0,,
+SCF #27,Stellar Talent Platform,https://github.com/Ekolance-Official,41000.0,,
+SCF #21,LocalCoin,https://github.com/venture-23/localcoin/tree/development,40875.0,,
+SCF #28,OCTO ultimate SocioFi NFT hub,https://github.com/OCTOplace,40500.0,,
+SCF #26,ART Club: Meaningful Utility,https://github.com/GRMarkkes/ArtCC,40000.0,,
+SCF #24,Stellar Token Launchpad,https://github.com/CryptixAG/Tokenlaunchpad,40000.0,,
+SCF #22,Ortege AI,https://github.com/Ortege-xyz,40000.0,,
+SCF #16,sorosorcerer.com,https://github.com/NossicaSystems/soroban_extend,40000.0,,
+SCF #13,Sorobix,https://github.com/sorobix,40000.0,,
+SCF #21,Smart Deploy,https://github.com/TENK-DAO/smartdeploy,39900.0,,
+SCF #20,KwickBit: Compliance made easy,https://github.com/kwickbit,39000.0,,
+SCF #23,Dropzey,https://github.com/zainh332/dropzey,38500.0,,
+SCF #20,DIA Oracles on Soroban,https://github.com/diadata-org/,38000.0,,
+SCF #38,Finance Access for Refugees and Unbanked,https://github.com/Zerie5,37500.0,Yes,Pre-Launch #1 - MVP
+SCF #29,SendIN,https://github.com/SendIN-Org/sendIN,37500.0,,
+SCF #29,Stellar Attestation Service,https://github.com/daccred/attestation-sandbox,37500.0,,
+SCF #39,Stellar-Powered Creator Micropayments,https://github.com/pragya-shar/QuillTip,37200.0,Yes,Pre-Launch #0 - Awarded
+SCF #22,PHP Anchor SDK,https://github.com/Argo-Navis-Dev/php-anchor-sdk,36400.0,,
+SCF #31,xlm.sh: Gateway for .xlm websites,https://gist.github.com/overcat/dadfbd565a474e6d4a04e08d060b8d60,36000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #29,EA Kazi,https://github.com/Grants-Projects/EA_KAZI_backend_ic,36000.0,,
+SCF #16,SStream,https://github.com/rahimklaber/SStream,36000.0,,
+SCF #26,Clixpesa,https://github.com/clixpesa,35050.0,,
+SCF #36,Demo App & Integration Tests,https://github.com/Soneso/stellar-swift-wallet-sdk,35000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #29,Soroban Command Insights (SCI),https://github.com/SalihToruner/Soroban-ELK,35000.0,,
+SCF #27,JS Worker SDK,https://github.com/Cloudouble/stellar-js-worker-sdk,35000.0,,
+SCF #23,Nobak: Custodial Wallet Signer,https://github.com/nobak-net/nobak-mobile,34500.0,,
+SCF #34,Randomness beacon for Soroban,https://github.com/NebulaVRF,34000.0,Yes,Pre-Launch #2 - Testnet
+SCF #20,Emigro Launch,https://github.com/EmigroBR,33920.0,,
+SCF #26,Accelar - Web3 Infrastructure,https://github.com/Accelar-labs,33000.0,,
+SCF #22,GiveCredit,https://github.com/CollaborativeEconomics/give-credit,33000.0,,
+SCF #18,Stellar Rust SDK,https://github.com/Baseflow/,32000.0,,
+SCF #13,XycLoans,https://github.com/xycloo/xycloans,31800.0,,
+SCF #22,Soroban Governor DAO,https://github.com/script3/soroban-governor,31300.0,,
+SCF #32,Rust Soroban Client Library - Launch,https://github.com/rahul-soshte/rs-soroban-client,31000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #29,Silicore,https://github.com/Ilanklim/EasyA_Hackathon,31000.0,,
+SCF #37,Smart Alerts and AI Insights for Stellar,http://github.com/sorobanhooks/,30000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #36,Interlinked 2.0,https://github.com/AntonTat27/interlinked,30000.0,Yes,Pre-Launch #1 - MVP
+SCF #33,Soroban Optimsitic Oracle,https://github.com/stackman27/soroban-opt-oracle,30000.0,Yes,Pre-Launch #1 - MVP
+SCF #22,Gecko Fuzz: Automated Fuzzing,https://github.com/jjjutla/GeckoFuzz,30000.0,,
+SCF #13,Horizon-as-a-Service,https://github.com/withObsrvr/nomad-pack-web3-registry,30000.0,,
+SCF #14,AssemblyScript Soroban SDK,https://github.com/Soneso,29600.0,,
+SCF #28,Teken - Easy Multi-Signatures,https://github.com/MoonBite-GmbH/soroban-multisig-contracts,29500.0,,
+SCF #20,Sorosan,https://github.com/Sorosan,29000.0,,
+SCF #28,Utoken,https://github.com/Utokens/webapp,28379.0,,
+SCF #30,MugglePay: Stripe for Stellar,https://github.com/mugglepay/,28000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #28,AS Soroban SDK,https://github.com/Soneso/as-soroban-sdk,28000.0,,
+SCF #24,Flutter Wallet SDK,https://github.com/Soneso/stellar_wallet_flutter_sdk,28000.0,,
+SCF #24,BI Tool For Stellar Community,https://github.com/dapplooker,27700.0,,
+SCF #22,Governance Modules Library,https://github.com/BlockScience/gov-modules-demos,27000.0,,
+SCF #36,First batch of Meta Contracts,https://github.com/Creit-Tech/Stellar-Router-SDK,26400.0,Yes,Pre-Launch #0 - Awarded
+SCF #33,No-Code Stellar Event Automation & Flows,https://github.com/sorobanhooks/sorobanhooks,25000.0,"Maybe in the future, but not in this submission",Pre-Launch #3 - Mainnet
+SCF #29,Calimero Network,https://github.com/calimero-network/core,25000.0,,
+SCF #20,StellarGPT,https://github.com/richafltr/StellarGPT.git,25000.0,,
+SCF #20,@soroban-react and Boilerplate,https://github.com/paltalabs/soroban-react,25000.0,,
+SCF #11,Kata.Games - Sharing platform,https://github.com/gaudiatech/kengi,25000.0,,
+SCF #27,Rehoboth Finance,https://github.com/Rehoboth-Finance,23300.0,,
+SCF #22,Flutter Wallet SDK,https://github.com/Soneso/stellar_wallet_flutter_sdk,22000.0,,
+SCF #29,Lul-Serving the unbanked,https://github.com/lulpay/mainproject,20500.0,,
+SCF #21,Soroban CLI Cross Platform GUI,https://github.com/yk-labs-dev/soroban-cli-gui,20000.0,,
+SCF #20,Walletban,https://github.com/walletban/walletban,20000.0,,
+SCF #20,Stellar Explorer,https://github.com/chatch/stellarexplorer,19600.0,,
+SCF #32,Soroban Multiplatform Light SDK v1.0,https://github.com/FrankSzendzielarz/SorobanRPCSDK,19000.0,Yes,Pre-Launch #3 - Mainnet
+SCF #26,Stellar Tools,https://github.com/joaquinsoza/stellar-tools,18700.0,,
+SCF #31,Resource Reporter: Gas Gauge for Dev,https://github.com/57blocks/stellar-resource-usage-report/,18240.0,Yes,Pre-Launch #3 - Mainnet
+SCF #23,Tide Stream Payment,https://github.com/TosinShada/tide-streaming,18200.0,,
+SCF #22,Chef,https://github.com/stellar-chef/stellar-chef,18000.0,,
+SCF #23,Solidity Contracts on Soroban II,https://github.com/hyperledger/solang,17000.0,,
+SCF #11,sTeX,https://github.com/Xycloo/documents-marketplace-devenv,17000.0,,
+SCF #20,Solidity Contracts on Soroban,https://github.com/hyperledger/solang,15000.0,,
+SCF #14,DYET (Do you even test?),https://github.com/matusv/DYET,15000.0,,
+SCF #25,stellar-nest,https://github.com/Alkeops/It-s-not-another-package,14800.0,,
+SCF #29,Stellar Women Bootcamp,https://github.com/womenbiz,14400.0,,
+SCF #21,Glo Dollar (USDGLO) on Stellar,https://github.com/Glo-Foundation/glo-wallet,13000.0,,
+SCF #27,Infrastructure Support Liquify,https://github.com/liquify-validation,12500.0,,
+SCF #24,JS Worker SDK,https://github.com/Cloudouble/stellar-js-worker-sdk,12500.0,,
+SCF #16,Stellar Explorer,https://github.com/chatch/stellarexplorer,11500.0,,
+SCF #40,YubiKey Support for the Passkey Kit,https://github.com/Argo-Navis-Dev/capacitor-passkey-plugin,10000.0,Yes,Pre-Launch #2 - Testnet
+SCF #33,Solidity web IDE for Soroban,https://github.com/hyperledger-labs/solang-playground,10000.0,No,Pre-Launch #2 - Testnet
+SCF #14,Soroban Smart Option Contract,https://github.com/blocktimefinancial/option,10000.0,,
+SCF #20,KMAC State Machine Template,https://github.com/huitemagico/kmac,7500.0,,
+SCF #11,SNNAC - Stellar NFT NFC ACcess,https://github.com/BlockShangerous/SNNAC,7500.0,,
+SCF #21,"Polaris Lend (Former ""fixie"")",https://github.com/jet-lab/polaris,4900.0,,
+SCF #29,LOAM - Grow Ambitious Dapps,https://github.com/loambuild,3000.0,,
+SCF #20,QSTN,https://github.com/orgs/QSTN-US/repositories,2500.0,,
+SCF #12,Soroban Pre-Order Contract,https://github.com/aolieman/soroban-pre-order,1000.0,,
