@@ -5,6 +5,19 @@
 
 ---
 
+## 🌍 Platform Overview
+
+The Stellar Community Fund's Public Goods Award has funded open-source tools, libraries, and infrastructure in the Stellar/Soroban ecosystem. Historically, funding decisions have relied on noisy, subjective signals. **PG Atlas** is the solution: an objective, graph-derived metrics backbone that provides transparent, verifiable signals for funding decisions.
+
+PG Atlas powers the **Layer 1 Metric Gate** in the SCF's new three-layer decision stack (Metrics → Expert Review → Community Vote). By parsing the software dependency graph of the ecosystem, PG Atlas answers critical questions mathematically:
+- Which packages are structural linchpins? (Criticality)
+- Which packages are maintained by a single person who could disappear tomorrow? (Pony Factor)
+- Which packages have the highest community adoption? (Adoption Signals)
+
+> 📘 **Executive Summary**: For a detailed technical breakdown of the topological algorithms and the graph intelligence prototype, please read the [PG Atlas: Graph Intelligence Prototype Report](06_demos/01_active_subgraph_prototype/TEAM_REPORT.md).
+
+---
+
 ## Directory Map
 
 ```
