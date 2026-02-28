@@ -884,7 +884,6 @@ def compute_pony_factors(G_active: nx.DiGraph) -> Dict[str, ContributorRiskResul
             pony_factor=pony_flag,
             hhi=round(hhi, 1),
             shannon_entropy=round(shannon_entropy, 3),
-            hhi=round(hhi, 1),
             top_contributor=top_contrib,
             top_contributor_share=round(top_share, 3),
             total_contributors=len(contributors),
