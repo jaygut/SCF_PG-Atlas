@@ -185,7 +185,7 @@ def generate_governance_report(
     # ── Graph topology ────────────────────────────────────────────────────────
     active_projects = {
         n for n, d in G_active.nodes(data=True)
-        if d.get("node_type") == "Project" and d.get("active", False)
+        if d.get("node_type") == "Project"
     }
     active_repos = {
         n for n, d in G_active.nodes(data=True)
@@ -227,7 +227,9 @@ def generate_governance_report(
     crit_pcts = compute_percentile_ranks(criticality_scores) if criticality_scores else {}
 
     sorted_crit = sorted(
-        criticality_scores.items(), key=lambda x: x[1], reverse=True
+        ((node, score) for node, score in criticality_scores.items() if score > 0),
+        key=lambda x: x[1],
+        reverse=True,
     )[:10]
     top_10_critical = [
         {
@@ -424,6 +426,7 @@ def export_report_markdown(
     kci_results: list,
     fer_results: list,
     output_path: str,
+    figure_paths: "dict[str, str] | None" = None,
 ) -> str:
     """
     Export a complete human-readable Markdown governance report.
@@ -502,7 +505,7 @@ def export_report_markdown(
         f"| Mean HHI | {snapshot.mean_hhi:.0f} |",
         f"| Median HHI | {snapshot.median_hhi:.0f} |",
         f"| Pony Factor Rate | {snapshot.pony_factor_rate:.1%} |",
-        f"| Mean Criticality | {snapshot.mean_criticality:.1f} |",
+        f"| Mean Criticality | {snapshot.mean_criticality:.2f} |",
         f"| Gate Pass Rate | {snapshot.gate_pass_rate:.1%} |",
         f"| Gate Borderline | {snapshot.gate_borderline_count} |",
         f"| Maintenance Debt Surface | {snapshot.maintenance_debt_surface_size} repos |",
@@ -683,6 +686,109 @@ def export_report_markdown(
             f"{borderline_label} |"
         )
     lines.append("")
+
+    # ── Visual Analysis (if figures were generated) ────────────────────────
+    if figure_paths:
+        report_dir = os.path.dirname(os.path.abspath(output_path))
+        _rel = lambda abs_p: os.path.relpath(abs_p, report_dir)
+
+        # Map filename prefixes to figure metadata
+        _figure_map = {
+            "fig1_": (
+                "Contributor Concentration Distribution",
+                "Distribution of top contributor commit share across all repos.",
+                "contributor_health",
+            ),
+            "fig3_": (
+                "Per-Repo Contributor Concentration",
+                "Repos ranked by top contributor share; gold = >=70% pony-dominant.",
+                "contributor_health",
+            ),
+            "fig6_": (
+                "Maintenance Health Tiers",
+                "Repos grouped by concentration risk tier (healthy/moderate/concentrated/critical).",
+                "contributor_health",
+            ),
+            "fig2_": (
+                "Layer 1 Metric Gate -- Pass Rate",
+                f"{snapshot.gate_pass_rate:.0%} pass rate; {snapshot.gate_borderline_count} borderline repos for expert review.",
+                "gate_adoption",
+            ),
+            "fig5_": (
+                "GitHub Adoption Signals -- Stars vs Forks",
+                "Stars vs. forks scatter coloured by gate pass/fail status.",
+                "gate_adoption",
+            ),
+            "fig4_": (
+                "Soroban Dependency Hub Bar Chart",
+                "Reverse dependency count per core Soroban package.",
+                "ecosystem",
+            ),
+            "net1_": (
+                "Soroban Ecosystem Dependency Network",
+                "Force-directed graph -- node size = dependent count, edge colour = target package.",
+                "ecosystem",
+            ),
+            "net2_": (
+                "Contributor-Repo Bipartite Network",
+                "Edge colour = commit concentration risk; gold stars = cross-repo keystone contributors.",
+                "ecosystem",
+            ),
+        }
+
+        # Group figures by section
+        contributor_figs = []
+        gate_figs = []
+        ecosystem_figs = []
+
+        for fname, abs_path in sorted(figure_paths.items()):
+            for prefix, (alt, caption, section) in _figure_map.items():
+                if fname.startswith(prefix):
+                    entry = (alt, caption, _rel(abs_path))
+                    if section == "contributor_health":
+                        contributor_figs.append(entry)
+                    elif section == "gate_adoption":
+                        gate_figs.append(entry)
+                    elif section == "ecosystem":
+                        ecosystem_figs.append(entry)
+                    break
+
+        lines += [
+            "---",
+            "",
+            "## Visual Analysis",
+            "",
+            "*Generated figures from the PG Atlas pipeline. Paths are relative to this report file.*",
+            "",
+        ]
+
+        if contributor_figs:
+            lines += ["### Contributor Health & Maintenance Risk", ""]
+            for alt, caption, rel_path in contributor_figs:
+                lines += [
+                    f"![{alt}]({rel_path})",
+                    f"*{caption}*",
+                    "",
+                ]
+
+        if gate_figs:
+            lines += ["### Gate & Adoption Signals", ""]
+            for alt, caption, rel_path in gate_figs:
+                lines += [
+                    f"![{alt}]({rel_path})",
+                    f"*{caption}*",
+                    "",
+                ]
+
+        if ecosystem_figs:
+            lines += ["### Ecosystem Structure", ""]
+            for alt, caption, rel_path in ecosystem_figs:
+                lines += [
+                    f"![{alt}]({rel_path})",
+                    f"*{caption}*",
+                    "",
+                ]
+
     lines += [
         "---",
         "",

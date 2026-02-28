@@ -14,7 +14,9 @@ Author: Jay Gutierrez, PhD | SCF #41 — Building the Backbone
 """
 
 import logging
-from dataclasses import dataclass
+import os
+from dataclasses import dataclass, field
+from datetime import datetime
 from typing import Optional
 
 import networkx as nx
@@ -78,8 +80,15 @@ class PipelineResult:
     keystone_contributors: list
     funding_efficiency: list
 
+    # Ingestion edge data (for visualization)
+    contribution_edges: list = field(default_factory=list)
+    dependency_edges: list = field(default_factory=list)
+
     # Final output
-    snapshot: EcosystemSnapshot
+    snapshot: EcosystemSnapshot = field(default=None)
+
+    # Generated figure paths (populated by viz module)
+    figure_paths: dict = field(default_factory=dict)
 
 
 def run_full_pipeline(
@@ -92,6 +101,8 @@ def run_full_pipeline(
     report_path: str | None = None,
     real_data: bool = False,
     ingest_config: "IngestionConfig | None" = None,
+    generate_figures: bool = True,
+    figures_dir: str | None = None,
 ) -> PipelineResult:
     """
     Execute the complete PG Atlas pipeline in one call.
@@ -146,11 +157,66 @@ def run_full_pipeline(
             len(ingestion_result.adoption_data),
         )
 
+    # ── 0b. Populate contribution/dependency edge lists ──────────────────────
+    # Also load adoption_data and activity_data for cached-CSV enrichment path.
+    _adoption_data_csv: dict = {}
+    _activity_data_csv: dict = {}
+
+    if real_data and ingestion_result is not None:
+        contrib_edges_raw = ingestion_result.contribution_edges
+        dep_edges_raw = ingestion_result.dependency_edges
+    else:
+        import csv as _csv
+        import json as _json
+        import os as _os
+
+        from pg_atlas.ingestion.orchestrator import (
+            _load_contribution_edges_from_csv,
+            _load_dep_edges_from_csv,
+        )
+
+        _repo_root = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
+        _contrib_csv = _os.path.join(_repo_root, "01_data", "real", "contributor_stats.csv")
+        _dep_csv = _os.path.join(_repo_root, "01_data", "real", "dependency_edges.csv")
+        _adopt_csv = _os.path.join(_repo_root, "01_data", "real", "adoption_signals.csv")
+        _a7_ckpt = _os.path.join(_repo_root, "01_data", "real", "checkpoints", "a7_progress.json")
+
+        contrib_edges_raw = _load_contribution_edges_from_csv(_contrib_csv) if _os.path.isfile(_contrib_csv) else []
+        dep_edges_raw = _load_dep_edges_from_csv(_dep_csv) if _os.path.isfile(_dep_csv) else []
+
+        # adoption_signals.csv → dict[repo_url, dict]
+        if _os.path.isfile(_adopt_csv):
+            with open(_adopt_csv, newline="") as _f:
+                for _row in _csv.DictReader(_f):
+                    _name = _row.get("repo_full_name", "")
+                    if _name:
+                        _url = (
+                            _name if _name.startswith("http")
+                            else f"https://github.com/{_name}"
+                        )
+                        _adoption_data_csv[_url] = {
+                            "monthly_downloads": int(_row.get("monthly_downloads") or 0),
+                            "github_stars": int(_row.get("github_stars") or 0),
+                            "github_forks": int(_row.get("github_forks") or 0),
+                        }
+
+        # a7_progress.json → activity_cache dict[repo_url, dict]
+        if _os.path.isfile(_a7_ckpt):
+            try:
+                with open(_a7_ckpt) as _f:
+                    _activity_data_csv = _json.load(_f).get("activity_cache", {})
+            except Exception:
+                _activity_data_csv = {}
+
     # ── 1. Build graph ─────────────────────────────────────────────────────────
     G = build_graph_from_csv(seed_list_path, orgs_path, repos_path, config)
     logger.info("Phase 1/14: Graph built — %d nodes, %d edges.", G.number_of_nodes(), G.number_of_edges())
 
-    # ── 1b. Enrich graph with ingestion results (if real_data) ────────────────
+    # ── 1b. Enrich graph ───────────────────────────────────────────────────────
+    # Two paths: (a) live ingestion result, (b) cached CSVs from a prior run.
+    # Either way the graph gets contributor commit shares, dependency edges,
+    # adoption signals, and activity metadata — enabling full metric computation
+    # without re-calling any external APIs.
     if real_data and ingestion_result is not None:
         from pg_atlas.graph.builder import enrich_graph_with_ingestion
         G = enrich_graph_with_ingestion(
@@ -161,9 +227,26 @@ def run_full_pipeline(
             activity_data=ingestion_result.activity_data,
         )
         logger.info(
-            "Phase 1b/14: Graph enriched — now %d nodes, %d edges.",
+            "Phase 1b/14: Graph enriched (live ingestion) — now %d nodes, %d edges.",
             G.number_of_nodes(),
             G.number_of_edges(),
+        )
+    elif contrib_edges_raw or dep_edges_raw:
+        from pg_atlas.graph.builder import enrich_graph_with_ingestion
+        G = enrich_graph_with_ingestion(
+            G,
+            dep_edges=dep_edges_raw,
+            contrib_edges=contrib_edges_raw,
+            adoption_data=_adoption_data_csv,
+            activity_data=_activity_data_csv,
+        )
+        logger.info(
+            "Phase 1b/14: Graph enriched (cached CSVs) — now %d nodes, %d edges. "
+            "adoption=%d, activity=%d",
+            G.number_of_nodes(),
+            G.number_of_edges(),
+            len(_adoption_data_csv),
+            len(_activity_data_csv),
         )
 
     # ── 2. Active subgraph projection ──────────────────────────────────────────
@@ -260,13 +343,13 @@ def run_full_pipeline(
             fer_results=fer,
             output_path=report_path,
         )
-        logger.info("Phase 14/14: Markdown report exported to %s.", report_path)
+        logger.info("Phase 14/15: Markdown report exported to %s.", report_path)
     else:
-        logger.info("Phase 14/14: Markdown export skipped (no report_path).")
+        logger.info("Phase 14/15: Markdown export skipped (no report_path).")
 
-    logger.info("PG Atlas pipeline complete.")
-
-    return PipelineResult(
+    # ── 15. Figure generation ─────────────────────────────────────────────────
+    # Build a temporary PipelineResult so generate_all_figures can read it
+    result_temp = PipelineResult(
         G_full=G,
         G_active=G_active,
         dormant_nodes=dormant,
@@ -283,5 +366,46 @@ def run_full_pipeline(
         maintenance_debt_surface=mds,
         keystone_contributors=kci,
         funding_efficiency=fer,
+        contribution_edges=contrib_edges_raw,
+        dependency_edges=dep_edges_raw,
         snapshot=snapshot,
     )
+
+    figure_paths_out: dict = {}
+    if generate_figures:
+        try:
+            from pg_atlas.viz.figures import generate_all_figures
+            # Auto-name figure dir as sibling to snapshot dir
+            _snap_date = snapshot.snapshot_date if snapshot else datetime.now().strftime("%Y-%m-%d")
+            _slug = (scf_round or "").replace(" ", "_").replace("/", "-").lower()
+            _auto_fig_dir = os.path.join(
+                os.path.dirname(os.path.abspath(output_dir)),
+                "figures",
+                f"{_snap_date}_{_slug}" if _slug else _snap_date,
+            )
+            _fig_dir = figures_dir or _auto_fig_dir
+            figure_paths_out = generate_all_figures(result_temp, _fig_dir)
+            logger.info("Phase 15/15: Generated %d figures to %s", len(figure_paths_out), _fig_dir)
+        except Exception as _e:
+            logger.warning("Phase 15/15: Figure generation failed: %s", _e)
+            figure_paths_out = {}
+    else:
+        logger.info("Phase 15/15: Figure generation skipped (generate_figures=False).")
+
+    # ── Re-export report with figure references if figures were generated ─────
+    if report_path and figure_paths_out:
+        export_report_markdown(
+            snapshot=snapshot,
+            gate_results=gate_results,
+            mds_entries=mds,
+            kci_results=kci,
+            fer_results=fer,
+            output_path=report_path,
+            figure_paths=figure_paths_out,
+        )
+        logger.info("Phase 15/15: Report re-exported with figure references.")
+
+    logger.info("PG Atlas pipeline complete.")
+
+    result_temp.figure_paths = figure_paths_out
+    return result_temp

@@ -1,12 +1,12 @@
 # PG Atlas Ingestion Report
 
-**Generated**: 2026-02-27T00:24:25.645313+00:00
+**Generated**: 2026-02-28T04:47:54.200159+00:00
 
 ## Coverage Summary
 
 | Metric | Count |
 |---|---|
-| Contribution edges | 161 |
+| Contribution edges | 160 |
 | Repos with activity data | 304 |
 | Dependency edges | 149 |
 | Adoption signal entries | 12 |
@@ -15,7 +15,7 @@
 ## Configuration
 
 - Rolling window: 90 days
-- Git max workers: 6
+- Git max workers: 4
 - deps.dev rate limit: 100 req/min
 - GitHub token: provided
 

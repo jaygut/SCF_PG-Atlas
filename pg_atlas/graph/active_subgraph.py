@@ -83,10 +83,16 @@ def active_subgraph_projection(
             archived = data.get("archived", False)
 
             if days is None:
-                # No activity data available (A7 hasn't run yet).
-                # Treat as dormant conservatively — will be re-evaluated
-                # after git log parser populates days_since_commit.
-                dormant_nodes.add(node)
+                if node_type == "ExternalRepo":
+                    # ExternalRepo nodes represent external ecosystem dependencies
+                    # (e.g. Soroban core crates). A7 never parses them because
+                    # they are not SCF submission repos. Retain them so that
+                    # dep-graph metrics (criticality, k-core, bridges) can
+                    # traverse the full dependency structure.
+                    active_nodes.add(node)
+                else:
+                    # Repo with no A7 data yet — treat as dormant conservatively.
+                    dormant_nodes.add(node)
                 continue
 
             if days <= active_window_days and not archived:

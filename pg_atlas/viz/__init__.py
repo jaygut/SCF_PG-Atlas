@@ -12,3 +12,5 @@ Planned modules:
 
 Depends on: pg_atlas.metrics (all modules), pg_atlas.metrics.gate (Agent Gamma).
 """
+
+from pg_atlas.viz.figures import generate_all_figures

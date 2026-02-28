@@ -140,6 +140,8 @@ def cmd_run(args: argparse.Namespace) -> int:
         ingest_config=ingest_cfg,
         scf_round=scf_round,
         report_path=report_path,
+        generate_figures=not args.no_figures,
+        figures_dir=args.figures_dir,
     )
     elapsed = time.monotonic() - t0
 
@@ -166,6 +168,11 @@ def cmd_run(args: argparse.Namespace) -> int:
     print(f"  {snap.north_star_answer}")
     print()
     print(f"  Report saved to  : {report_path}")
+    if result.figure_paths:
+        _fig_dir = os.path.dirname(list(result.figure_paths.values())[0])
+        print(f"  Figures ({len(result.figure_paths):2d})       : {_fig_dir}/")
+    else:
+        print(f"  Figures          : {'skipped' if args.no_figures else 'none generated'}")
     print("=" * 60)
 
     return 0
@@ -243,6 +250,8 @@ def cmd_metrics(args: argparse.Namespace) -> int:
         real_data=False,
         scf_round=scf_round,
         report_path=report_path,
+        generate_figures=not args.no_figures,
+        figures_dir=args.figures_dir,
     )
     elapsed = time.monotonic() - t0
 
@@ -262,6 +271,11 @@ def cmd_metrics(args: argparse.Namespace) -> int:
     print()
     print(f"  North Star: {snap.north_star_answer}")
     print(f"  Report    : {report_path}")
+    if result.figure_paths:
+        _fig_dir = os.path.dirname(list(result.figure_paths.values())[0])
+        print(f"  Figures ({len(result.figure_paths):2d})       : {_fig_dir}/")
+    else:
+        print(f"  Figures          : {'skipped' if args.no_figures else 'none generated'}")
     print("=" * 60)
     return 0
 
@@ -325,11 +339,154 @@ def cmd_status(args: argparse.Namespace) -> int:
     else:
         print("    (no snapshots yet)")
 
+    # Figures
+    fig_base = repo_root / "04_implementation" / "figures"
+    print("\n  Figures (04_implementation/figures/):")
+    if fig_base.exists():
+        subdirs = sorted([d for d in fig_base.iterdir() if d.is_dir()],
+                        key=lambda d: d.stat().st_mtime, reverse=True)
+        for subdir in subdirs[:5]:
+            pngs = list(subdir.glob("*.png"))
+            mtime = datetime.fromtimestamp(subdir.stat().st_mtime).strftime("%Y-%m-%d %H:%M")
+            print(f"    {subdir.name:<40} {len(pngs):>2} figures  ({mtime})")
+        if not subdirs:
+            print("    (no figure directories yet)")
+    else:
+        print("    (figures directory not created yet)")
+
     print()
     return 0
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
+
+# ── Subcommand: viz ───────────────────────────────────────────────────────
+
+def cmd_viz(args: argparse.Namespace) -> int:
+    """Generate all figures from latest data (metrics pipeline + viz)."""
+    _load_dotenv(args.env_file)
+    _setup_logging(args.log_level)
+
+    import glob
+    import json as _json
+
+    from pg_atlas.pipeline import run_full_pipeline
+
+    scf_round = args.scf_round or "SCF Q2 2026"
+    # Try to read latest snapshot to get the round label
+    snap_dir = os.path.join(
+        os.path.dirname(os.path.dirname(__file__)),
+        "04_implementation", "snapshots",
+    )
+    snaps = sorted(glob.glob(os.path.join(snap_dir, "*.json")))
+    if snaps and not args.scf_round:
+        try:
+            with open(snaps[-1]) as f:
+                scf_round = _json.load(f).get("scf_round", scf_round)
+        except Exception:
+            pass
+
+    figures_dir = args.figures_dir
+    if not figures_dir:
+        figures_dir = os.path.join(
+            os.path.dirname(os.path.dirname(__file__)),
+            "04_implementation", "figures",
+        )
+
+    logger.info("Running viz: metrics pipeline + figure generation...")
+    t0 = time.monotonic()
+    result = run_full_pipeline(
+        real_data=False,
+        scf_round=scf_round,
+        report_path=None,
+    )
+
+    # Generate figures from pipeline result
+    try:
+        from pg_atlas.viz.figures import generate_all_figures
+        result.figure_paths = generate_all_figures(result, figures_dir)
+    except ImportError:
+        logger.warning("pg_atlas.viz.figures not available — skipping figure generation.")
+    except Exception as exc:
+        logger.error("Figure generation failed: %s", exc)
+
+    elapsed = time.monotonic() - t0
+
+    print()
+    print("=" * 60)
+    print("  PG ATLAS — VIZ COMPLETE")
+    print("=" * 60)
+    print(f"  Elapsed     : {elapsed:.1f}s")
+    if result.figure_paths:
+        fig_dir = os.path.dirname(list(result.figure_paths.values())[0])
+        print(f"  Figures ({len(result.figure_paths)}) : {fig_dir}/")
+        for name, path in sorted(result.figure_paths.items()):
+            print(f"    + {name}")
+    else:
+        print("  No figures generated (figures.py may not be available)")
+    print("=" * 60)
+
+    return 0
+
+
+# ── Subcommand: compare ──────────────────────────────────────────────────
+
+def cmd_compare(args: argparse.Namespace) -> int:
+    """Compare two ecosystem snapshots longitudinally."""
+    _load_dotenv(args.env_file)
+    _setup_logging(args.log_level)
+
+    import json as _json
+
+    from pg_atlas.metrics.snapshot_compare import (
+        compare_snapshots,
+        generate_comparison_report,
+        generate_trend_figure,
+    )
+
+    with open(args.snapshot_a) as f:
+        snap_a = _json.load(f)
+    with open(args.snapshot_b) as f:
+        snap_b = _json.load(f)
+
+    delta = compare_snapshots(snap_a, snap_b)
+
+    report_dir = os.path.join(
+        os.path.dirname(os.path.dirname(__file__)),
+        "04_implementation", "snapshots",
+    )
+    output_path = args.output_path or os.path.join(
+        report_dir,
+        f"comparison_{datetime.now(tz=timezone.utc).strftime('%Y%m%d_%H%M%S')}.md",
+    )
+
+    generate_comparison_report(delta, snap_a, snap_b, output_path)
+
+    print()
+    print("=" * 60)
+    print("  PG ATLAS — COMPARISON COMPLETE")
+    print("=" * 60)
+    print(f"  {snap_a.get('scf_round', snap_a['snapshot_date'])} -> {snap_b.get('scf_round', snap_b['snapshot_date'])}")
+    print()
+    print(f"  Gate pass rate    : {snap_a['gate_pass_rate']:.1%} -> {snap_b['gate_pass_rate']:.1%}  ({delta.gate_pass_rate_delta:+.1%})")
+    print(f"  Pony factor rate  : {snap_a['pony_factor_rate']:.1%} -> {snap_b['pony_factor_rate']:.1%}  ({delta.pony_factor_rate_delta:+.1%})")
+    print(f"  Mean HHI          : {snap_a['mean_hhi']:.0f} -> {snap_b['mean_hhi']:.0f}  ({delta.mean_hhi_delta:+.0f})")
+    print(f"  Active repos      : {snap_a['total_active_repos']} -> {snap_b['total_active_repos']}  ({delta.active_repos_delta:+d})")
+    print()
+    print(f"  Summary: {delta.summary_narrative}")
+    print()
+    print(f"  Report saved to: {output_path}")
+
+    if args.trend:
+        trend_path = output_path.replace(".md", "_trend.png")
+        generate_trend_figure([snap_a, snap_b], trend_path)
+        print(f"  Trend figure   : {trend_path}")
+
+    print("=" * 60)
+    return 0
+
+
+# ── Helpers ───────────────────────────────────────────────────────────────
 
 def _clear_checkpoints() -> None:
     """Remove all checkpoint files to force a fresh run."""
@@ -428,6 +585,14 @@ Examples:
             metavar="PATH",
             help="Markdown report output path (default: auto-named in 04_implementation/snapshots/)",
         )
+        p.add_argument(
+            "--figures-dir", default=None, metavar="PATH",
+            help="Directory for figure outputs (default: auto-named under 04_implementation/figures/)"
+        )
+        p.add_argument(
+            "--no-figures", action="store_true",
+            help="Skip figure generation"
+        )
 
     # run
     p_run = subparsers.add_parser(
@@ -461,6 +626,14 @@ Examples:
         "--report-path", default=None, metavar="PATH",
         help="Markdown report output path",
     )
+    p_metrics.add_argument(
+        "--figures-dir", default=None, metavar="PATH",
+        help="Directory for figure outputs (default: auto-named under 04_implementation/figures/)"
+    )
+    p_metrics.add_argument(
+        "--no-figures", action="store_true",
+        help="Skip figure generation"
+    )
     p_metrics.set_defaults(func=cmd_metrics)
 
     # status
@@ -469,6 +642,40 @@ Examples:
         help="Show checkpoint and output file status without running anything",
     )
     p_status.set_defaults(func=cmd_status)
+
+    # viz
+    p_viz = subparsers.add_parser(
+        "viz",
+        help="Regenerate all figures from latest data (~2s, no ingestion)",
+    )
+    p_viz.add_argument(
+        "--figures-dir", default=None, metavar="PATH",
+        help="Output directory for figures",
+    )
+    p_viz.add_argument("--scf-round", default=None, metavar="NAME")
+    p_viz.set_defaults(func=cmd_viz)
+
+    # compare
+    p_compare = subparsers.add_parser(
+        "compare",
+        help="Compare two ecosystem snapshots longitudinally",
+    )
+    p_compare.add_argument(
+        "snapshot_a", metavar="SNAPSHOT_A",
+        help="Path to first JSON snapshot",
+    )
+    p_compare.add_argument(
+        "snapshot_b", metavar="SNAPSHOT_B",
+        help="Path to second JSON snapshot",
+    )
+    p_compare.add_argument(
+        "--output-path", default=None, metavar="PATH",
+    )
+    p_compare.add_argument(
+        "--trend", action="store_true",
+        help="Also generate trend figure",
+    )
+    p_compare.set_defaults(func=cmd_compare)
 
     return parser
 

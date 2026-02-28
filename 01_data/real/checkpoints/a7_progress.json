@@ -367,12 +367,12 @@
       "accessible": false
     },
     "https://github.com/orbit-cdp/hermes": {
-      "days_since_commit": 19,
+      "days_since_commit": 20,
       "latest_commit_date": "2026-02-07T07:04:01Z",
       "accessible": true
     },
     "https://github.com/streamingfast/substreams": {
-      "days_since_commit": 0,
+      "days_since_commit": 1,
       "latest_commit_date": "2026-02-26T19:23:00Z",
       "accessible": true
     },
@@ -397,7 +397,7 @@
       "accessible": false
     },
     "https://github.com/Inferara/inference-language-spec": {
-      "days_since_commit": 7,
+      "days_since_commit": 8,
       "latest_commit_date": "2026-02-19T23:36:25Z",
       "accessible": true
     },
@@ -427,7 +427,7 @@
       "accessible": false
     },
     "https://github.com/vannafinance/Protocol_V1_Soroban": {
-      "days_since_commit": 8,
+      "days_since_commit": 9,
       "latest_commit_date": "2026-02-18T16:48:43Z",
       "accessible": true
     },
@@ -478,7 +478,7 @@
     },
     "https://github.com/hurley87/refraction": {
       "days_since_commit": 0,
-      "latest_commit_date": "2026-02-27T00:00:28Z",
+      "latest_commit_date": "2026-02-27T21:12:17Z",
       "accessible": true
     },
     "https://github.com/towa-hi/solid-parakeet": {
@@ -497,7 +497,7 @@
       "accessible": true
     },
     "https://github.com/lumenlater/lumen-later": {
-      "days_since_commit": 13,
+      "days_since_commit": 14,
       "latest_commit_date": "2026-02-13T07:56:50Z",
       "accessible": true
     },
@@ -527,7 +527,7 @@
       "accessible": true
     },
     "https://github.com/YieldBack-Cash/yieldback": {
-      "days_since_commit": 15,
+      "days_since_commit": 16,
       "latest_commit_date": "2026-02-11T22:46:24Z",
       "accessible": true
     },
@@ -552,7 +552,7 @@
       "accessible": false
     },
     "https://github.com/Rendbit/crossborderpayment": {
-      "days_since_commit": 58,
+      "days_since_commit": 59,
       "latest_commit_date": "2025-12-30T17:15:56Z",
       "accessible": true
     },
@@ -572,7 +572,7 @@
       "accessible": false
     },
     "https://github.com/quinn-eschenbach/stellars-finance": {
-      "days_since_commit": 28,
+      "days_since_commit": 29,
       "latest_commit_date": "2026-01-29T19:25:40Z",
       "accessible": true
     },
@@ -582,7 +582,7 @@
       "accessible": true
     },
     "https://github.com/laina-defi/laina": {
-      "days_since_commit": 70,
+      "days_since_commit": 71,
       "latest_commit_date": "2025-12-18T18:12:16Z",
       "accessible": true
     },
@@ -602,7 +602,7 @@
       "accessible": false
     },
     "https://github.com/melomar10/stellar_integration": {
-      "days_since_commit": 45,
+      "days_since_commit": 46,
       "latest_commit_date": "2026-01-12T19:05:58Z",
       "accessible": true
     },
@@ -627,7 +627,7 @@
       "accessible": true
     },
     "https://github.com/EquitXCompany/equitx-project": {
-      "days_since_commit": 72,
+      "days_since_commit": 73,
       "latest_commit_date": "2025-12-16T14:38:29Z",
       "accessible": true
     },
@@ -662,7 +662,7 @@
       "accessible": false
     },
     "https://github.com/runtimeverification/komet": {
-      "days_since_commit": 2,
+      "days_since_commit": 3,
       "latest_commit_date": "2026-02-24T14:04:47Z",
       "accessible": true
     },
@@ -757,7 +757,7 @@
       "accessible": false
     },
     "https://github.com/tupui/soroban-versioning": {
-      "days_since_commit": 1,
+      "days_since_commit": 2,
       "latest_commit_date": "2026-02-25T23:10:04Z",
       "accessible": true
     },
@@ -767,7 +767,7 @@
       "accessible": true
     },
     "https://github.com/subquery/subql": {
-      "days_since_commit": 0,
+      "days_since_commit": 1,
       "latest_commit_date": "2026-02-26T07:51:11Z",
       "accessible": true
     },
@@ -827,7 +827,7 @@
       "accessible": true
     },
     "https://github.com/abroad-finance/abroad": {
-      "days_since_commit": 0,
+      "days_since_commit": 1,
       "latest_commit_date": "2026-02-26T19:18:20Z",
       "accessible": true
     },
@@ -857,7 +857,7 @@
       "accessible": false
     },
     "https://github.com/CodelnGhana/codelnpay-project": {
-      "days_since_commit": 37,
+      "days_since_commit": 38,
       "latest_commit_date": "2026-01-20T15:59:14Z",
       "accessible": true
     },
@@ -877,12 +877,12 @@
       "accessible": false
     },
     "https://github.com/expand-network/sdk-nodejs.git": {
-      "days_since_commit": 79,
+      "days_since_commit": 80,
       "latest_commit_date": "2025-12-09T11:42:23Z",
       "accessible": true
     },
     "https://github.com/perun-network/perun-stellar-backend": {
-      "days_since_commit": 37,
+      "days_since_commit": 38,
       "latest_commit_date": "2026-01-20T09:55:03Z",
       "accessible": true
     },
@@ -922,12 +922,12 @@
       "accessible": false
     },
     "https://github.com/hyperledger-labs/go-perun": {
-      "days_since_commit": 81,
+      "days_since_commit": 82,
       "latest_commit_date": "2025-12-07T20:52:25Z",
       "accessible": true
     },
     "https://github.com/daccred/attest.so": {
-      "days_since_commit": 30,
+      "days_since_commit": 31,
       "latest_commit_date": "2026-01-27T10:46:11Z",
       "accessible": true
     },
@@ -958,7 +958,7 @@
     },
     "https://github.com/devasignhq/devasign-api": {
       "days_since_commit": 0,
-      "latest_commit_date": "2026-02-26T14:11:25Z",
+      "latest_commit_date": "2026-02-27T20:39:43Z",
       "accessible": true
     },
     "https://github.com/normalfinance/normal-v1-stellar": {
@@ -982,7 +982,7 @@
       "accessible": true
     },
     "https://github.com/kindfi-org/kindfi": {
-      "days_since_commit": 0,
+      "days_since_commit": 1,
       "latest_commit_date": "2026-02-26T20:06:54Z",
       "accessible": true
     },
@@ -1017,7 +1017,7 @@
       "accessible": false
     },
     "https://github.com/Soneso/stellar-swift-wallet-sdk": {
-      "days_since_commit": 22,
+      "days_since_commit": 23,
       "latest_commit_date": "2026-02-04T16:28:17Z",
       "accessible": true
     },
@@ -1092,7 +1092,7 @@
       "accessible": false
     },
     "https://github.com/SpinachFi/spinach": {
-      "days_since_commit": 6,
+      "days_since_commit": 7,
       "latest_commit_date": "2026-02-20T23:11:31Z",
       "accessible": true
     },
@@ -1157,8 +1157,8 @@
       "accessible": false
     },
     "https://github.com/BlaineHeffron/soroban-sdk-tools": {
-      "days_since_commit": 2,
-      "latest_commit_date": "2026-02-24T23:28:10Z",
+      "days_since_commit": 0,
+      "latest_commit_date": "2026-02-27T22:23:27Z",
       "accessible": true
     },
     "https://github.com/JosephFashola/agtrail-eco-trace": {
@@ -1237,8 +1237,8 @@
       "accessible": false
     },
     "https://github.com/usepaykit/stellar-tools": {
-      "days_since_commit": 2,
-      "latest_commit_date": "2026-02-24T22:09:52Z",
+      "days_since_commit": 0,
+      "latest_commit_date": "2026-02-27T15:01:46Z",
       "accessible": true
     },
     "https://github.com/blocktimefinancial/option": {
@@ -1252,7 +1252,7 @@
       "accessible": false
     },
     "https://github.com/stallionsassemble/stallion-contract": {
-      "days_since_commit": 51,
+      "days_since_commit": 52,
       "latest_commit_date": "2026-01-06T12:00:06Z",
       "accessible": true
     },
@@ -1262,12 +1262,12 @@
       "accessible": false
     },
     "https://github.com/NibrasD/Stellar-Transaction-Visualizer": {
-      "days_since_commit": 71,
+      "days_since_commit": 72,
       "latest_commit_date": "2025-12-17T18:43:00Z",
       "accessible": true
     },
     "https://github.com/paltalabs/defindex": {
-      "days_since_commit": 10,
+      "days_since_commit": 11,
       "latest_commit_date": "2026-02-16T19:57:55Z",
       "accessible": true
     },
@@ -1287,7 +1287,7 @@
       "accessible": false
     },
     "https://github.com/Giveth/giveth-dapps-v2": {
-      "days_since_commit": 16,
+      "days_since_commit": 17,
       "latest_commit_date": "2026-02-10T11:11:52Z",
       "accessible": true
     },
@@ -1347,8 +1347,8 @@
       "accessible": true
     },
     "https://github.com/GaloisInc/saw-script": {
-      "days_since_commit": 1,
-      "latest_commit_date": "2026-02-25T20:20:07Z",
+      "days_since_commit": 0,
+      "latest_commit_date": "2026-02-28T01:23:38Z",
       "accessible": true
     },
     "https://github.com/Avento-Labs/legacy-suite-contracts": {
@@ -1437,8 +1437,8 @@
       "accessible": true
     },
     "https://github.com/komunitin/komunitin/": {
-      "days_since_commit": 1,
-      "latest_commit_date": "2026-02-25T12:01:19Z",
+      "days_since_commit": 0,
+      "latest_commit_date": "2026-02-27T21:46:40Z",
       "accessible": true
     },
     "https://github.com/BoostyLabs/tricorn": {
@@ -1447,7 +1447,7 @@
       "accessible": false
     },
     "https://github.com/Inferara/soroban-security-catalogue": {
-      "days_since_commit": 22,
+      "days_since_commit": 23,
       "latest_commit_date": "2026-02-04T08:02:48Z",
       "accessible": true
     },
@@ -1537,7 +1537,7 @@
       "accessible": true
     },
     "https://github.com/pragya-shar/QuillTip": {
-      "days_since_commit": 6,
+      "days_since_commit": 7,
       "latest_commit_date": "2026-02-20T15:24:07Z",
       "accessible": true
     },
@@ -1602,7 +1602,7 @@
       "accessible": true
     },
     "https://github.com/rahul-soshte/rs-soroban-client": {
-      "days_since_commit": 18,
+      "days_since_commit": 19,
       "latest_commit_date": "2026-02-08T20:52:06Z",
       "accessible": true
     },
@@ -1662,7 +1662,7 @@
       "accessible": true
     },
     "https://github.com/Soneso/stellar_wallet_flutter_sdk": {
-      "days_since_commit": 22,
+      "days_since_commit": 23,
       "latest_commit_date": "2026-02-04T13:46:38Z",
       "accessible": true
     },
@@ -1687,7 +1687,7 @@
       "accessible": true
     },
     "https://github.com/calimero-network/core": {
-      "days_since_commit": 8,
+      "days_since_commit": 9,
       "latest_commit_date": "2026-02-18T13:39:58Z",
       "accessible": true
     },
@@ -1727,7 +1727,7 @@
       "accessible": true
     },
     "https://github.com/chatch/stellarexplorer": {
-      "days_since_commit": 9,
+      "days_since_commit": 10,
       "latest_commit_date": "2026-02-17T22:45:08Z",
       "accessible": true
     },
@@ -1742,7 +1742,7 @@
       "accessible": true
     },
     "https://github.com/57blocks/stellar-resource-usage-report/": {
-      "days_since_commit": 65,
+      "days_since_commit": 66,
       "latest_commit_date": "2025-12-23T08:02:43Z",
       "accessible": true
     },
@@ -1782,7 +1782,7 @@
       "accessible": false
     },
     "https://github.com/Glo-Foundation/glo-wallet": {
-      "days_since_commit": 1,
+      "days_since_commit": 2,
       "latest_commit_date": "2026-02-25T15:29:00Z",
       "accessible": true
     },
@@ -1792,7 +1792,7 @@
       "accessible": false
     },
     "https://github.com/Argo-Navis-Dev/capacitor-passkey-plugin": {
-      "days_since_commit": 7,
+      "days_since_commit": 8,
       "latest_commit_date": "2026-02-19T18:36:42Z",
       "accessible": true
     },

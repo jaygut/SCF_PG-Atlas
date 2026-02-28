@@ -196,6 +196,7 @@ def test_pypi_package_name_lowercased_in_url():
 import json
 import os
 
+from pg_atlas.ingestion.crates_io_client import SOROBAN_CRATE_TO_GITHUB
 from pg_atlas.ingestion.orchestrator import (
     Checkpoint,
     IngestionConfig,
@@ -271,3 +272,45 @@ def test_ingestion_result_structure():
     assert len(result.coverage_report) == 0
     assert isinstance(result.errors, list)
     assert len(result.errors) == 0
+
+
+# ---------------------------------------------------------------------------
+# CratesIoClient.get_crate_github_url
+# ---------------------------------------------------------------------------
+
+
+def test_get_crate_github_url_hardcoded_mapping():
+    """Returns hardcoded GitHub URL for all 5 Soroban core crates — no API call."""
+    client = CratesIoClient()
+    for crate_name, expected_url in SOROBAN_CRATE_TO_GITHUB.items():
+        assert client.get_crate_github_url(crate_name) == expected_url
+    # Both env crates map to the same monorepo
+    assert client.get_crate_github_url("soroban-env-host") == \
+           client.get_crate_github_url("soroban-env-common")
+
+
+def test_get_crate_github_url_api_fallback(monkeypatch):
+    """Falls back to the crates.io API for unknown crates; strips trailing slash."""
+    client = CratesIoClient()
+    fake = {"crate": {"repository": "https://github.com/some-org/some-crate/"}}
+    calls = []
+    monkeypatch.setattr(client, "_get", lambda url: (calls.append(url), fake)[1])
+    result = client.get_crate_github_url("some-unknown-crate")
+    assert result == "https://github.com/some-org/some-crate"
+    assert len(calls) == 1
+    assert "some-unknown-crate" in calls[0]
+
+
+def test_get_crate_github_url_returns_none_on_failure(monkeypatch):
+    """Returns None gracefully for API errors, missing fields, and non-GitHub URLs."""
+    client = CratesIoClient()
+    # Case 1: _get returns None (network / HTTP failure)
+    monkeypatch.setattr(client, "_get", lambda url: None)
+    assert client.get_crate_github_url("any-crate") is None
+    # Case 2: Response missing 'crate' key
+    monkeypatch.setattr(client, "_get", lambda url: {"error": "not found"})
+    assert client.get_crate_github_url("any-crate") is None
+    # Case 3: repository is a non-GitHub URL (e.g. GitLab)
+    monkeypatch.setattr(client, "_get",
+        lambda url: {"crate": {"repository": "https://gitlab.com/org/crate"}})
+    assert client.get_crate_github_url("any-crate") is None

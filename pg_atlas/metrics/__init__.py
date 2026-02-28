@@ -13,3 +13,9 @@ pg_atlas.graph.active_subgraph.active_subgraph_projection().
 
 All thresholds and gate parameters live in pg_atlas.config.PGAtlasConfig.
 """
+
+from pg_atlas.metrics.snapshot_compare import (  # noqa: F401
+    compare_snapshots,
+    generate_comparison_report,
+    generate_trend_figure,
+)

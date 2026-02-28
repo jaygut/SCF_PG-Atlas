@@ -82,6 +82,7 @@ def kcore_analysis(
     for n in dep_nodes:
         G_undirected.nodes[n].update(G_active.nodes[n])
 
+    G_undirected.remove_edges_from(nx.selfloop_edges(G_undirected))
     core_numbers: dict[str, int] = nx.core_number(G_undirected)
 
     max_core = max(core_numbers.values(), default=0)

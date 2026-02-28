@@ -468,6 +468,27 @@ def run_deps_ingestion(
             logger.warning("crates.io error for %s: %s", crate, exc)
             errors.append({"source": "deps_crates", "crate": crate, "error": str(exc)})
 
+    # ── Translate CARGO crate names → GitHub URLs ─────────────────────────────
+    # CARGO edges carry crate package names (e.g. "soroban-sdk") as node IDs.
+    # The graph uses GitHub URLs as node IDs. Translate before CSV write so that
+    # dep edges connect to the real ecosystem graph instead of an isolated subgraph.
+    cargo_edges = [e for e in dep_edges if e.get("ecosystem") == "CARGO"]
+    if cargo_edges:
+        all_crates = {e["from_repo"] for e in cargo_edges} | {e["to_package"] for e in cargo_edges}
+        crate_url_map: dict[str, str] = {}
+        for crate in all_crates:
+            url = crates_client.get_crate_github_url(crate)
+            if url:
+                crate_url_map[crate] = url
+        logger.info(
+            "Cargo URL resolution: %d/%d unique crate names resolved to GitHub URLs",
+            len(crate_url_map), len(all_crates),
+        )
+        for edge in dep_edges:
+            if edge.get("ecosystem") == "CARGO":
+                edge["from_repo"]  = crate_url_map.get(edge["from_repo"],  edge["from_repo"])
+                edge["to_package"] = crate_url_map.get(edge["to_package"], edge["to_package"])
+
     logger.info("Deps ingestion complete: %d dependency edges, %d errors", len(dep_edges), len(errors))
     return dep_edges
 

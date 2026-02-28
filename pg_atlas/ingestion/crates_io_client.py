@@ -41,6 +41,16 @@ SOROBAN_CORE_CRATES: list[str] = [
     "soroban-env-common",
 ]
 
+# GitHub repository URLs for the 5 core Soroban crates.
+# soroban-env-host and soroban-env-common share the rs-soroban-env monorepo.
+SOROBAN_CRATE_TO_GITHUB: dict[str, str] = {
+    "soroban-sdk":        "https://github.com/stellar/rs-soroban-sdk",
+    "stellar-xdr":        "https://github.com/stellar/rs-stellar-xdr",
+    "stellar-strkey":     "https://github.com/stellar/rs-stellar-strkey",
+    "soroban-env-host":   "https://github.com/stellar/rs-soroban-env",
+    "soroban-env-common": "https://github.com/stellar/rs-soroban-env",
+}
+
 
 @dataclass
 class CratesReverseDep:
@@ -247,3 +257,21 @@ class CratesIoClient:
             "Soroban reverse graph bootstrap complete: %d edges total", len(all_edges)
         )
         return all_edges
+
+    def get_crate_github_url(self, crate_name: str) -> str | None:
+        """Return the GitHub repository URL for a crate, or None.
+
+        Consults SOROBAN_CRATE_TO_GITHUB first (no API call). For unknown crates
+        calls GET /api/v1/crates/{name} and extracts crate.repository. Only GitHub
+        URLs are returned; other hosts or missing fields return None.
+        """
+        if crate_name in SOROBAN_CRATE_TO_GITHUB:
+            return SOROBAN_CRATE_TO_GITHUB[crate_name]
+        encoded = urllib.parse.quote(crate_name, safe="")
+        data = self._get(f"{CRATES_IO_BASE}/crates/{encoded}")
+        if data is None:
+            return None
+        repo = (data.get("crate") or {}).get("repository") or ""
+        if "github.com" in repo:
+            return repo.rstrip("/")
+        return None
