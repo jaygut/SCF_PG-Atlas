@@ -1,0 +1,9 @@
+{
+  "done": [
+    "@stellar/freighter-api",
+    "@stellar/js-xdr",
+    "@stellar/stellar-base",
+    "@stellar/stellar-sdk",
+    "soroban-client"
+  ]
+}

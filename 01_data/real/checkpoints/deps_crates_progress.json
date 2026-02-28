@@ -1,0 +1,9 @@
+{
+  "done": [
+    "soroban-env-common",
+    "soroban-env-host",
+    "soroban-sdk",
+    "stellar-strkey",
+    "stellar-xdr"
+  ]
+}

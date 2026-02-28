@@ -1,0 +1,83 @@
+{
+  "snapshot_date": "2026-02-27",
+  "scf_round": "SCF Q2 2026",
+  "total_active_projects": 0,
+  "total_active_repos": 42,
+  "total_dependency_edges": 0,
+  "max_kcore": 0,
+  "bridge_edge_count": 0,
+  "mean_hhi": 7108.4,
+  "median_hhi": 7513.8,
+  "pony_factor_rate": 0.85,
+  "mean_criticality": 0,
+  "median_criticality": 0.0,
+  "gate_pass_rate": 0.1,
+  "gate_borderline_count": 4,
+  "maintenance_debt_surface_size": 0,
+  "keystone_contributor_count": 0,
+  "top_10_critical_packages": [
+    {
+      "name": "https://github.com/streamingfast/substreams",
+      "criticality": 0,
+      "pct": 0.0,
+      "ecosystem": "unknown"
+    },
+    {
+      "name": "https://github.com/YieldBack-Cash/yieldback",
+      "criticality": 0,
+      "pct": 0.0,
+      "ecosystem": "unknown"
+    },
+    {
+      "name": "https://github.com/Glo-Foundation/glo-wallet",
+      "criticality": 0,
+      "pct": 0.0,
+      "ecosystem": "unknown"
+    },
+    {
+      "name": "https://github.com/SpinachFi/spinach",
+      "criticality": 0,
+      "pct": 0.0,
+      "ecosystem": "unknown"
+    },
+    {
+      "name": "https://github.com/lumenlater/lumen-later",
+      "criticality": 0,
+      "pct": 0.0,
+      "ecosystem": "unknown"
+    },
+    {
+      "name": "https://github.com/Soneso/stellar-swift-wallet-sdk",
+      "criticality": 0,
+      "pct": 0.0,
+      "ecosystem": "unknown"
+    },
+    {
+      "name": "https://github.com/Argo-Navis-Dev/capacitor-passkey-plugin",
+      "criticality": 0,
+      "pct": 0.0,
+      "ecosystem": "unknown"
+    },
+    {
+      "name": "https://github.com/hyperledger-labs/go-perun",
+      "criticality": 0,
+      "pct": 0.0,
+      "ecosystem": "unknown"
+    },
+    {
+      "name": "https://github.com/runtimeverification/komet",
+      "criticality": 0,
+      "pct": 0.0,
+      "ecosystem": "unknown"
+    },
+    {
+      "name": "https://github.com/quinn-eschenbach/stellars-finance",
+      "criticality": 0,
+      "pct": 0.0,
+      "ecosystem": "unknown"
+    }
+  ],
+  "top_5_keystone_contributors": [],
+  "funding_efficiency_summary": {},
+  "north_star_answer": "No funding efficiency data available for this snapshot. No projects currently qualify for the Maintenance Debt Surface \u2014 a positive signal for ecosystem health. The Metric Gate passes 10% of projects (4/40) for Expert Review."
+}

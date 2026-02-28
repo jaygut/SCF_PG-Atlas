@@ -1,0 +1,1830 @@
+{
+  "done": [
+    "Soroban source code is not open sourced yet. For your reference, here\u2019s the URL for the Solidity version: https://github.com/00labs/huma-contracts-v2.",
+    "We will leverage Wanchain code for crosschain communication : https://github.com/wanchain/message-bridge-contracts",
+    "github.com/keizai-tools/",
+    "http://github.com/sorobanhooks/",
+    "http://github.com/wombat-exchange",
+    "https://gist.github.com/overcat/dadfbd565a474e6d4a04e08d060b8d60",
+    "https://github.com/57blocks/stellar-resource-usage-report/",
+    "https://github.com/Accelar-labs",
+    "https://github.com/Alkeops/It-s-not-another-package",
+    "https://github.com/AnChainAI/BEI-Playground",
+    "https://github.com/AntonTat27/interlinked",
+    "https://github.com/AquaToken",
+    "https://github.com/Argo-Navis-Dev/capacitor-passkey-plugin",
+    "https://github.com/Argo-Navis-Dev/php-anchor-sdk",
+    "https://github.com/AssetDesk",
+    "https://github.com/Avento-Labs/legacy-suite-contracts",
+    "https://github.com/Baseflow/",
+    "https://github.com/Baseflow/stellar-rust-sdk",
+    "https://github.com/Beans-BV",
+    "https://github.com/Ben-Platform",
+    "https://github.com/Bevor-Protocol",
+    "https://github.com/Blade-Labs",
+    "https://github.com/BlaineHeffron/soroban-sdk-tools",
+    "https://github.com/BlockScience/SCF-GML-Contributions",
+    "https://github.com/BlockScience/gov-modules-demos",
+    "https://github.com/BlockShangerous/SNNAC",
+    "https://github.com/Blocverse01/Globachain-DApp",
+    "https://github.com/Bond-Hive",
+    "https://github.com/BoostyLabs/tricorn",
+    "https://github.com/BorderDollar/BorderDollarApp",
+    "https://github.com/CarmineOptions/derisk-research/",
+    "https://github.com/ChainsAtlas",
+    "https://github.com/Cloudouble/stellar-js-worker-sdk",
+    "https://github.com/CoboGlobal",
+    "https://github.com/CodelnGhana/codelnpay-project",
+    "https://github.com/CoinFabrik/scout-soroban",
+    "https://github.com/CollaborativeEconomics/give-credit",
+    "https://github.com/CometDEX",
+    "https://github.com/CommuniDAO/stellar-badge-discord-bot",
+    "https://github.com/Creit-Tech/Stellar-Router-SDK",
+    "https://github.com/CrossChainLabs-Stellar/sorobanpulse-webapp",
+    "https://github.com/CryptixAG/Tokenlaunchpad",
+    "https://github.com/Cryptorubic",
+    "https://github.com/Eascrow/Eascrow",
+    "https://github.com/Ekolance-Official",
+    "https://github.com/EmigroBR",
+    "https://github.com/EquitXCompany/equitx-project",
+    "https://github.com/Fairblock",
+    "https://github.com/FrankSzendzielarz/SorobanRPCSDK",
+    "https://github.com/GRMarkkes/ArtCC",
+    "https://github.com/GaloisInc/formal-verso",
+    "https://github.com/GaloisInc/saw-script",
+    "https://github.com/Gearup-Market",
+    "https://github.com/Giveth/giveth-dapps-v2",
+    "https://github.com/Glo-Foundation/glo-wallet",
+    "https://github.com/GoROSEN/rosen-stellar",
+    "https://github.com/GrantChain/GrantFox-OSS",
+    "https://github.com/Grants-Projects/EA_KAZI_backend_ic",
+    "https://github.com/GreepPay",
+    "https://github.com/Hana-Technology",
+    "https://github.com/Ilanklim/EasyA_Hackathon",
+    "https://github.com/Inferara/inference-language-spec",
+    "https://github.com/Inferara/soroban-security-catalogue",
+    "https://github.com/InfluencerSFX/SFX-MOBILE-APP-VERSION-2.1-Current",
+    "https://github.com/JoseCToscano/freelii/",
+    "https://github.com/JoseCToscano/stellar-ai-demo",
+    "https://github.com/JosephFashola/agtrail-eco-trace",
+    "https://github.com/KuraApp/kura-core-api-stellar",
+    "https://github.com/LUNARxy/EARA-Blockchain",
+    "https://github.com/Lobster-Protocol",
+    "https://github.com/Lobstrco",
+    "https://github.com/Mercury-Labs-Dev/SollPay-Protocol",
+    "https://github.com/MicaTechnology/escrow_api",
+    "https://github.com/MobulaFi",
+    "https://github.com/MoonBite-GmbH/soroban-multisig-contracts",
+    "https://github.com/Moonlight-Protocol",
+    "https://github.com/Muwpay-uniswapper/Muwp-Stellar/tree/main",
+    "https://github.com/NebulaVRF",
+    "https://github.com/NibrasD/Stellar-Transaction-Visualizer",
+    "https://github.com/NossicaSystems/soroban_extend",
+    "https://github.com/OCTOplace",
+    "https://github.com/OmniLumen/omnilumen-core.git",
+    "https://github.com/Ortege-xyz",
+    "https://github.com/PayZoll-Orgs/PayZoll-1.0.0-P2",
+    "https://github.com/PeerPesa/Stellar.PeerPESA",
+    "https://github.com/PeridotFinance/Peridot-Soroban/tree/main",
+    "https://github.com/Phoenix-Protocol-Group",
+    "https://github.com/PlutoDAO",
+    "https://github.com/PotLock/grantpicks-stellar",
+    "https://github.com/Raum-Network",
+    "https://github.com/Rehoboth-Finance",
+    "https://github.com/Rendbit/crossborderpayment",
+    "https://github.com/RozoAI/rozo-tap-to-pay",
+    "https://github.com/SalihToruner/Soroban-ELK",
+    "https://github.com/ScaleMote/flow",
+    "https://github.com/SebWingleet/Aerochain-Stellar",
+    "https://github.com/SendIN-Org/sendIN",
+    "https://github.com/SentinelFi#-sentinel-protocol-repositories",
+    "https://github.com/Soneso",
+    "https://github.com/Soneso/Arcturus",
+    "https://github.com/Soneso/as-soroban-sdk",
+    "https://github.com/Soneso/stellar-swift-wallet-sdk",
+    "https://github.com/Soneso/stellar_wallet_flutter_sdk",
+    "https://github.com/Soroban-Learn/soroban-learn-new",
+    "https://github.com/Sorosan",
+    "https://github.com/SpinachFi/spinach",
+    "https://github.com/Splitoio",
+    "https://github.com/Splyce-Finance",
+    "https://github.com/Stogniev/CLOB-DEX-Collateral",
+    "https://github.com/StreamCharge/ApiCharge/issues",
+    "https://github.com/Subs-Protocol",
+    "https://github.com/TENK-DAO/smart-deploy",
+    "https://github.com/TENK-DAO/smartdeploy",
+    "https://github.com/Tico4Chain-Coders",
+    "https://github.com/TosinShada/tide-streaming",
+    "https://github.com/Utokens/webapp",
+    "https://github.com/V-Blaze/jetpad-wallet",
+    "https://github.com/VIALabs-io",
+    "https://github.com/VestingLabs",
+    "https://github.com/Xycloo/documents-marketplace-devenv",
+    "https://github.com/YieldBack-Cash/yieldback",
+    "https://github.com/Zerie5",
+    "https://github.com/abroad-finance/abroad",
+    "https://github.com/adamikhq",
+    "https://github.com/agnosticeng",
+    "https://github.com/airgap-it",
+    "https://github.com/alexanderkoh/hoops-UI, https://github.com/Hoops-Finance",
+    "https://github.com/alexanderkoh/hoops; https://github.com/silence48/soroban-typescript-indexer",
+    "https://github.com/alexanderkoh/passport-meridian",
+    "https://github.com/allbridge-io",
+    "https://github.com/allbridge-io/dex-soroban-contracts/",
+    "https://github.com/almanax-ai/almanax",
+    "https://github.com/aolieman/soroban-pre-order",
+    "https://github.com/artizen-fund",
+    "https://github.com/baaspoolsllc",
+    "https://github.com/bandprotocol",
+    "https://github.com/beamable",
+    "https://github.com/blockful-io/trustful-stellar-dapp",
+    "https://github.com/blocktimefinancial/option",
+    "https://github.com/bluxcc",
+    "https://github.com/boundlessfi",
+    "https://github.com/bp-ventures/lightecho-stellar-oracle",
+    "https://github.com/bp-ventures/retail-wallet",
+    "https://github.com/calimero-network/core",
+    "https://github.com/cedelabs/sdk-examples",
+    "https://github.com/chainpatrol",
+    "https://github.com/chatch/stellarexplorer",
+    "https://github.com/christopherkarani/Tuma",
+    "https://github.com/clixpesa",
+    "https://github.com/coindisco",
+    "https://github.com/communiDAO",
+    "https://github.com/communidao",
+    "https://github.com/comunitaria/Comunitaria-wallet-dashboard",
+    "https://github.com/constellation-protocol/constellation-protocol",
+    "https://github.com/copperxhq",
+    "https://github.com/daccred/attest.so",
+    "https://github.com/daccred/attestation-sandbox",
+    "https://github.com/dapplooker",
+    "https://github.com/decentrio/soro-book, https://github.com/decentrio/sorobook-api, github.com/decentrio/xdr-converter",
+    "https://github.com/deep-ink-ventures",
+    "https://github.com/defarm-repo",
+    "https://github.com/devasignhq/devasign-api",
+    "https://github.com/diadata-org/",
+    "https://github.com/dobprotocol/dobvalidator",
+    "https://github.com/dogstarapps/arka.fund",
+    "https://github.com/dogstarcoin",
+    "https://github.com/dogstarcoin/",
+    "https://github.com/dorahacker/Billy-Stellar-Wallet",
+    "https://github.com/elsa-care",
+    "https://github.com/eq-lab",
+    "https://github.com/eq-lab/Slender/tree/develop,",
+    "https://github.com/ernestocontrer/SFC-15Tracker",
+    "https://github.com/esteblock/soroswap",
+    "https://github.com/expand-network/sdk-nodejs.git",
+    "https://github.com/fastbuka",
+    "https://github.com/findolor/sorosplits-contracts",
+    "https://github.com/fluxitystellar",
+    "https://github.com/freespek/solarkraft",
+    "https://github.com/gateway-fm",
+    "https://github.com/gaudiatech/kengi",
+    "https://github.com/getaxal/",
+    "https://github.com/hawthorne-abendsen/se-oracle-contract",
+    "https://github.com/hollwann/abroad-stellar",
+    "https://github.com/holonym-foundation",
+    "https://github.com/horizontalsystems",
+    "https://github.com/huitemagico/kmac",
+    "https://github.com/hunnykumar/SwiftEx/tree/feature/TestNetWallet",
+    "https://github.com/hurley87/refraction",
+    "https://github.com/hyperledger-labs/go-perun",
+    "https://github.com/hyperledger-labs/solang-playground",
+    "https://github.com/hyperledger/solang",
+    "https://github.com/ichifarm",
+    "https://github.com/icon-project/xcall-multi, https://github.com/balancednetwork, https://github.com/icon-project/centralized-relay",
+    "https://github.com/idos-network",
+    "https://github.com/indexed-xyz/docs",
+    "https://github.com/jet-lab/polaris",
+    "https://github.com/jjjutla/GeckoFuzz",
+    "https://github.com/joaquinsoza/stellar-tools",
+    "https://github.com/k3-labs",
+    "https://github.com/keizai-tools/",
+    "https://github.com/kindfi-org/kindfi",
+    "https://github.com/kommitters/chaincerts-smart-contracts",
+    "https://github.com/komunitin/komunitin/",
+    "https://github.com/kwickbit",
+    "https://github.com/laina-defi/laina",
+    "https://github.com/lanternfi",
+    "https://github.com/legasicrypto/borrowing-protocol",
+    "https://github.com/linkioafrica/wavy_soroban_contract",
+    "https://github.com/liquidsfi",
+    "https://github.com/liquify-validation",
+    "https://github.com/litemint",
+    "https://github.com/loambuild",
+    "https://github.com/lockb0x-llc/SDEX-Razor-Components",
+    "https://github.com/luisao8/Soroban-code-AIssistant.git",
+    "https://github.com/lulpay/mainproject",
+    "https://github.com/lumenlater/lumen-later",
+    "https://github.com/lumenloop",
+    "https://github.com/matusv/DYET",
+    "https://github.com/melomar10/stellar_integration",
+    "https://github.com/meria-finance",
+    "https://github.com/mishabunte/",
+    "https://github.com/mugglepay/",
+    "https://github.com/naveed-siddiqi/lumos-dao/tree/smart-contract",
+    "https://github.com/neovestor-tech",
+    "https://github.com/nobak-net/nobak-mobile",
+    "https://github.com/normalfinance/normal-v1",
+    "https://github.com/normalfinance/normal-v1-stellar",
+    "https://github.com/nrxschool/stellar-bootcamp",
+    "https://github.com/orally-network",
+    "https://github.com/orbit-cdp",
+    "https://github.com/orbit-cdp/hermes",
+    "https://github.com/orgs/EveryFinance/repositories",
+    "https://github.com/orgs/GladiusClub/repositories",
+    "https://github.com/orgs/QSTN-US/repositories",
+    "https://github.com/orgs/RemittEase-Dev-Team/repositories",
+    "https://github.com/orgs/Socket-Fi/repositories",
+    "https://github.com/orgs/SoroStarter/repositories",
+    "https://github.com/orgs/WebSoroban/repositories",
+    "https://github.com/orgs/reflector-network/repositories",
+    "https://github.com/orgs/useSoroban/repositories",
+    "https://github.com/palremit",
+    "https://github.com/paltalabs/",
+    "https://github.com/paltalabs/defindex",
+    "https://github.com/paltalabs/soroban-react",
+    "https://github.com/paulfears/StellarSnap",
+    "https://github.com/pendulum-chain/spacewalk",
+    "https://github.com/perun-network/perun-stellar-backend",
+    "https://github.com/pragya-shar/QuillTip",
+    "https://github.com/quinn-eschenbach/stellars-finance",
+    "https://github.com/rahataid",
+    "https://github.com/rahimklaber/SStream",
+    "https://github.com/rahul-soshte/rs-soroban-client",
+    "https://github.com/rangesecurity",
+    "https://github.com/rango-exchange",
+    "https://github.com/reflector-network",
+    "https://github.com/richafltr/StellarGPT.git",
+    "https://github.com/robertDurst/digicus",
+    "https://github.com/runtimeverification/komet",
+    "https://github.com/scifecap/excellar",
+    "https://github.com/script3/soroban-governor",
+    "https://github.com/siborg-ads/dsponsor-contracts",
+    "https://github.com/skyhitz",
+    "https://github.com/sorobanexp/explorer",
+    "https://github.com/sorobanhooks/sorobanhooks",
+    "https://github.com/sorobix",
+    "https://github.com/soroswap",
+    "https://github.com/soroswap/",
+    "https://github.com/spaced-out-thoughts-dev-foundation/digicus",
+    "https://github.com/spydra-tech/onchainid",
+    "https://github.com/stackman27/soroban-opt-oracle",
+    "https://github.com/stallionsassemble/stallion-contract",
+    "https://github.com/stellar-broker",
+    "https://github.com/stellar-chef/stellar-chef",
+    "https://github.com/stellarcarbon/",
+    "https://github.com/streamingfast/substreams",
+    "https://github.com/subquery/subql",
+    "https://github.com/thegivehub",
+    "https://github.com/thehubdao",
+    "https://github.com/tigerblocks/BBF",
+    "https://github.com/tolgayayci/sora",
+    "https://github.com/towa-hi/solid-parakeet",
+    "https://github.com/trustek-io/rampmedaddy-frontend/",
+    "https://github.com/tupui/soroban-versioning",
+    "https://github.com/untangledfinance",
+    "https://github.com/useSoroban",
+    "https://github.com/usepaykit/stellar-tools",
+    "https://github.com/vannafinance/Protocol_V1_Soroban",
+    "https://github.com/venture-23/localcoin/tree/development",
+    "https://github.com/walletban/walletban",
+    "https://github.com/web3-antivirus/chrome-extension",
+    "https://github.com/withObsrvr/Flow",
+    "https://github.com/withObsrvr/nomad-pack-web3-registry",
+    "https://github.com/womenbiz",
+    "https://github.com/xcapit/stellar-poc",
+    "https://github.com/xycloo",
+    "https://github.com/xycloo/rs-ingest",
+    "https://github.com/xycloo/xycloans",
+    "https://github.com/yk-labs-dev/soroban-cli-gui",
+    "https://github.com/zainh332/dropzey",
+    "https://github.com/zbagdzevicius/tokentails",
+    "https://github.com/zkCross-Network",
+    "https://github.com/zkbricks/",
+    "https://github.com/zkbricks/mpc-zexe/",
+    "https://www.github.com/globachain"
+  ],
+  "activity_cache": {
+    "https://github.com/AnChainAI/BEI-Playground": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "http://github.com/wombat-exchange": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/alexanderkoh/passport-meridian": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Fairblock": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/bp-ventures/retail-wallet": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/beamable": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/RozoAI/rozo-tap-to-pay": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Splyce-Finance": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/CoboGlobal": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/holonym-foundation": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/rangesecurity": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/stellar-broker": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/orbit-cdp/hermes": {
+      "days_since_commit": 19,
+      "latest_commit_date": "2026-02-07T07:04:01Z",
+      "accessible": true
+    },
+    "https://github.com/streamingfast/substreams": {
+      "days_since_commit": 0,
+      "latest_commit_date": "2026-02-26T19:23:00Z",
+      "accessible": true
+    },
+    "https://github.com/untangledfinance": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/trustek-io/rampmedaddy-frontend/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/gateway-fm": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/rahataid": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Inferara/inference-language-spec": {
+      "days_since_commit": 7,
+      "latest_commit_date": "2026-02-19T23:36:25Z",
+      "accessible": true
+    },
+    "https://github.com/eq-lab": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/hawthorne-abendsen/se-oracle-contract": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/deep-ink-ventures": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/xcapit/stellar-poc": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/AquaToken": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/vannafinance/Protocol_V1_Soroban": {
+      "days_since_commit": 8,
+      "latest_commit_date": "2026-02-18T16:48:43Z",
+      "accessible": true
+    },
+    "https://github.com/dogstarapps/arka.fund": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Lobstrco": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/dobprotocol/dobvalidator": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/CometDEX": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/loambuild": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/orgs/EveryFinance/repositories": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Subs-Protocol": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/soroswap": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/MicaTechnology/escrow_api": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/hurley87/refraction": {
+      "days_since_commit": 0,
+      "latest_commit_date": "2026-02-27T00:00:28Z",
+      "accessible": true
+    },
+    "https://github.com/towa-hi/solid-parakeet": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Moonlight-Protocol": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/spydra-tech/onchainid": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/lumenlater/lumen-later": {
+      "days_since_commit": 13,
+      "latest_commit_date": "2026-02-13T07:56:50Z",
+      "accessible": true
+    },
+    "https://github.com/artizen-fund": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/horizontalsystems": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/SebWingleet/Aerochain-Stellar": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/SentinelFi#-sentinel-protocol-repositories": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/indexed-xyz/docs": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/YieldBack-Cash/yieldback": {
+      "days_since_commit": 15,
+      "latest_commit_date": "2026-02-11T22:46:24Z",
+      "accessible": true
+    },
+    "https://github.com/idos-network": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/orgs/useSoroban/repositories": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/MobulaFi": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/agnosticeng": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Rendbit/crossborderpayment": {
+      "days_since_commit": 58,
+      "latest_commit_date": "2025-12-30T17:15:56Z",
+      "accessible": true
+    },
+    "https://github.com/withObsrvr/Flow": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/KuraApp/kura-core-api-stellar": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/cedelabs/sdk-examples": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/quinn-eschenbach/stellars-finance": {
+      "days_since_commit": 28,
+      "latest_commit_date": "2026-01-29T19:25:40Z",
+      "accessible": true
+    },
+    "https://github.com/Mercury-Labs-Dev/SollPay-Protocol": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/laina-defi/laina": {
+      "days_since_commit": 70,
+      "latest_commit_date": "2025-12-18T18:12:16Z",
+      "accessible": true
+    },
+    "https://github.com/lumenloop": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/christopherkarani/Tuma": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/boundlessfi": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/melomar10/stellar_integration": {
+      "days_since_commit": 45,
+      "latest_commit_date": "2026-01-12T19:05:58Z",
+      "accessible": true
+    },
+    "https://github.com/Lobster-Protocol": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/JoseCToscano/stellar-ai-demo": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/liquidsfi": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Soneso/Arcturus": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/EquitXCompany/equitx-project": {
+      "days_since_commit": 72,
+      "latest_commit_date": "2025-12-16T14:38:29Z",
+      "accessible": true
+    },
+    "https://github.com/kommitters/chaincerts-smart-contracts": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/litemint": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Bevor-Protocol": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/allbridge-io/dex-soroban-contracts/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/chainpatrol": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/PayZoll-Orgs/PayZoll-1.0.0-P2": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/runtimeverification/komet": {
+      "days_since_commit": 2,
+      "latest_commit_date": "2026-02-24T14:04:47Z",
+      "accessible": true
+    },
+    "https://github.com/alexanderkoh/hoops-UI, https://github.com/Hoops-Finance": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/zkCross-Network": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/reflector-network": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/decentrio/soro-book, https://github.com/decentrio/sorobook-api, github.com/decentrio/xdr-converter": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/robertDurst/digicus": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Bond-Hive": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/paltalabs/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Ortege-xyz": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/xycloo": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/constellation-protocol/constellation-protocol": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/CoinFabrik/scout-soroban": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/sorobanexp/explorer": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/allbridge-io": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/soroswap/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Phoenix-Protocol-Group": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/pendulum-chain/spacewalk": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/GaloisInc/formal-verso": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Beans-BV": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/tupui/soroban-versioning": {
+      "days_since_commit": 1,
+      "latest_commit_date": "2026-02-25T23:10:04Z",
+      "accessible": true
+    },
+    "https://github.com/Eascrow/Eascrow": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/subquery/subql": {
+      "days_since_commit": 0,
+      "latest_commit_date": "2026-02-26T07:51:11Z",
+      "accessible": true
+    },
+    "https://github.com/eq-lab/Slender/tree/develop,": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/CrossChainLabs-Stellar/sorobanpulse-webapp": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/coindisco": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/zbagdzevicius/tokentails": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/ScaleMote/flow": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/orgs/reflector-network/repositories": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/siborg-ads/dsponsor-contracts": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/VIALabs-io": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/almanax-ai/almanax": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/BorderDollar/BorderDollarApp": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/findolor/sorosplits-contracts": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/abroad-finance/abroad": {
+      "days_since_commit": 0,
+      "latest_commit_date": "2026-02-26T19:18:20Z",
+      "accessible": true
+    },
+    "https://github.com/legasicrypto/borrowing-protocol": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/bp-ventures/lightecho-stellar-oracle": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/PlutoDAO": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/blockful-io/trustful-stellar-dapp": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/PeridotFinance/Peridot-Soroban/tree/main": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/CodelnGhana/codelnpay-project": {
+      "days_since_commit": 37,
+      "latest_commit_date": "2026-01-20T15:59:14Z",
+      "accessible": true
+    },
+    "https://github.com/defarm-repo": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/LUNARxy/EARA-Blockchain": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Cryptorubic": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/expand-network/sdk-nodejs.git": {
+      "days_since_commit": 79,
+      "latest_commit_date": "2025-12-09T11:42:23Z",
+      "accessible": true
+    },
+    "https://github.com/perun-network/perun-stellar-backend": {
+      "days_since_commit": 37,
+      "latest_commit_date": "2026-01-20T09:55:03Z",
+      "accessible": true
+    },
+    "https://www.github.com/globachain": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Muwpay-uniswapper/Muwp-Stellar/tree/main": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/scifecap/excellar": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/orgs/Socket-Fi/repositories": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/linkioafrica/wavy_soroban_contract": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/dogstarcoin/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/zkbricks/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/hyperledger-labs/go-perun": {
+      "days_since_commit": 81,
+      "latest_commit_date": "2025-12-07T20:52:25Z",
+      "accessible": true
+    },
+    "https://github.com/daccred/attest.so": {
+      "days_since_commit": 30,
+      "latest_commit_date": "2026-01-27T10:46:11Z",
+      "accessible": true
+    },
+    "https://github.com/fluxitystellar": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/elsa-care": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Hana-Technology": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/useSoroban": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/bluxcc": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/devasignhq/devasign-api": {
+      "days_since_commit": 0,
+      "latest_commit_date": "2026-02-26T14:11:25Z",
+      "accessible": true
+    },
+    "https://github.com/normalfinance/normal-v1-stellar": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/orbit-cdp": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/kwickbit": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/script3/soroban-governor": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/kindfi-org/kindfi": {
+      "days_since_commit": 0,
+      "latest_commit_date": "2026-02-26T20:06:54Z",
+      "accessible": true
+    },
+    "https://github.com/TENK-DAO/smart-deploy": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/StreamCharge/ApiCharge/issues": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/dogstarcoin": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Ben-Platform": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/tolgayayci/sora": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/AssetDesk": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Soneso/stellar-swift-wallet-sdk": {
+      "days_since_commit": 22,
+      "latest_commit_date": "2026-02-04T16:28:17Z",
+      "accessible": true
+    },
+    "https://github.com/communiDAO": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/V-Blaze/jetpad-wallet": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/GoROSEN/rosen-stellar": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/k3-labs": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/skyhitz": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/adamikhq": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/BlockScience/SCF-GML-Contributions": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/CommuniDAO/stellar-badge-discord-bot": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/JoseCToscano/freelii/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Stogniev/CLOB-DEX-Collateral": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/icon-project/xcall-multi, https://github.com/balancednetwork, https://github.com/icon-project/centralized-relay": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/xycloo/rs-ingest": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/paulfears/StellarSnap": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/fastbuka": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/SpinachFi/spinach": {
+      "days_since_commit": 6,
+      "latest_commit_date": "2026-02-20T23:11:31Z",
+      "accessible": true
+    },
+    "https://github.com/GreepPay": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/normalfinance/normal-v1": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Tico4Chain-Coders": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/communidao": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/freespek/solarkraft": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/hunnykumar/SwiftEx/tree/feature/TestNetWallet": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/nrxschool/stellar-bootcamp": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/stellarcarbon/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/baaspoolsllc": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Soroban-Learn/soroban-learn-new": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/getaxal/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/GrantChain/GrantFox-OSS": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/BlaineHeffron/soroban-sdk-tools": {
+      "days_since_commit": 2,
+      "latest_commit_date": "2026-02-24T23:28:10Z",
+      "accessible": true
+    },
+    "https://github.com/JosephFashola/agtrail-eco-trace": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/orgs/WebSoroban/repositories": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/dorahacker/Billy-Stellar-Wallet": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/airgap-it": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/palremit": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/lockb0x-llc/SDEX-Razor-Components": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/rango-exchange": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/VestingLabs": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/naveed-siddiqi/lumos-dao/tree/smart-contract": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/bandprotocol": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Argo-Navis-Dev/php-anchor-sdk": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/esteblock/soroswap": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/hollwann/abroad-stellar": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/InfluencerSFX/SFX-MOBILE-APP-VERSION-2.1-Current": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/orgs/RemittEase-Dev-Team/repositories": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/usepaykit/stellar-tools": {
+      "days_since_commit": 2,
+      "latest_commit_date": "2026-02-24T22:09:52Z",
+      "accessible": true
+    },
+    "https://github.com/blocktimefinancial/option": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Splitoio": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/stallionsassemble/stallion-contract": {
+      "days_since_commit": 51,
+      "latest_commit_date": "2026-01-06T12:00:06Z",
+      "accessible": true
+    },
+    "https://github.com/mishabunte/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/NibrasD/Stellar-Transaction-Visualizer": {
+      "days_since_commit": 71,
+      "latest_commit_date": "2025-12-17T18:43:00Z",
+      "accessible": true
+    },
+    "https://github.com/paltalabs/defindex": {
+      "days_since_commit": 10,
+      "latest_commit_date": "2026-02-16T19:57:55Z",
+      "accessible": true
+    },
+    "https://github.com/copperxhq": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/alexanderkoh/hoops; https://github.com/silence48/soroban-typescript-indexer": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Gearup-Market": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Giveth/giveth-dapps-v2": {
+      "days_since_commit": 16,
+      "latest_commit_date": "2026-02-10T11:11:52Z",
+      "accessible": true
+    },
+    "https://github.com/neovestor-tech": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/OmniLumen/omnilumen-core.git": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/web3-antivirus/chrome-extension": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/PotLock/grantpicks-stellar": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "Soroban source code is not open sourced yet. For your reference, here\u2019s the URL for the Solidity version: https://github.com/00labs/huma-contracts-v2.": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Raum-Network": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/spaced-out-thoughts-dev-foundation/digicus": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/ichifarm": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Blade-Labs": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/zkbricks/mpc-zexe/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/CarmineOptions/derisk-research/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/GaloisInc/saw-script": {
+      "days_since_commit": 1,
+      "latest_commit_date": "2026-02-25T20:20:07Z",
+      "accessible": true
+    },
+    "https://github.com/Avento-Labs/legacy-suite-contracts": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Blocverse01/Globachain-DApp": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/ernestocontrer/SFC-15Tracker": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/ChainsAtlas": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/comunitaria/Comunitaria-wallet-dashboard": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/lanternfi": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/orally-network": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Baseflow/stellar-rust-sdk": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "github.com/keizai-tools/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/orgs/SoroStarter/repositories": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/thehubdao": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/EmigroBR": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/meria-finance": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/PeerPesa/Stellar.PeerPESA": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/thegivehub": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/orgs/GladiusClub/repositories": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/tigerblocks/BBF": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/komunitin/komunitin/": {
+      "days_since_commit": 1,
+      "latest_commit_date": "2026-02-25T12:01:19Z",
+      "accessible": true
+    },
+    "https://github.com/BoostyLabs/tricorn": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Inferara/soroban-security-catalogue": {
+      "days_since_commit": 22,
+      "latest_commit_date": "2026-02-04T08:02:48Z",
+      "accessible": true
+    },
+    "We will leverage Wanchain code for crosschain communication : https://github.com/wanchain/message-bridge-contracts": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/luisao8/Soroban-code-AIssistant.git": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Soneso": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/keizai-tools/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Ekolance-Official": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/venture-23/localcoin/tree/development": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/OCTOplace": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/GRMarkkes/ArtCC": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/CryptixAG/Tokenlaunchpad": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/NossicaSystems/soroban_extend": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/sorobix": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/TENK-DAO/smartdeploy": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/zainh332/dropzey": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/diadata-org/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Zerie5": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/SendIN-Org/sendIN": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/daccred/attestation-sandbox": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/pragya-shar/QuillTip": {
+      "days_since_commit": 6,
+      "latest_commit_date": "2026-02-20T15:24:07Z",
+      "accessible": true
+    },
+    "https://gist.github.com/overcat/dadfbd565a474e6d4a04e08d060b8d60": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Grants-Projects/EA_KAZI_backend_ic": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/rahimklaber/SStream": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/clixpesa": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/SalihToruner/Soroban-ELK": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Cloudouble/stellar-js-worker-sdk": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/nobak-net/nobak-mobile": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/NebulaVRF": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Accelar-labs": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/CollaborativeEconomics/give-credit": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Baseflow/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/xycloo/xycloans": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/rahul-soshte/rs-soroban-client": {
+      "days_since_commit": 18,
+      "latest_commit_date": "2026-02-08T20:52:06Z",
+      "accessible": true
+    },
+    "https://github.com/Ilanklim/EasyA_Hackathon": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "http://github.com/sorobanhooks/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/AntonTat27/interlinked": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/stackman27/soroban-opt-oracle": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/jjjutla/GeckoFuzz": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/withObsrvr/nomad-pack-web3-registry": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/MoonBite-GmbH/soroban-multisig-contracts": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Sorosan": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Utokens/webapp": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/mugglepay/": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Soneso/as-soroban-sdk": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Soneso/stellar_wallet_flutter_sdk": {
+      "days_since_commit": 22,
+      "latest_commit_date": "2026-02-04T13:46:38Z",
+      "accessible": true
+    },
+    "https://github.com/dapplooker": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/BlockScience/gov-modules-demos": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Creit-Tech/Stellar-Router-SDK": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/sorobanhooks/sorobanhooks": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/calimero-network/core": {
+      "days_since_commit": 8,
+      "latest_commit_date": "2026-02-18T13:39:58Z",
+      "accessible": true
+    },
+    "https://github.com/richafltr/StellarGPT.git": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/paltalabs/soroban-react": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/gaudiatech/kengi": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Rehoboth-Finance": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/lulpay/mainproject": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/yk-labs-dev/soroban-cli-gui": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/walletban/walletban": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/chatch/stellarexplorer": {
+      "days_since_commit": 9,
+      "latest_commit_date": "2026-02-17T22:45:08Z",
+      "accessible": true
+    },
+    "https://github.com/FrankSzendzielarz/SorobanRPCSDK": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/joaquinsoza/stellar-tools": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/57blocks/stellar-resource-usage-report/": {
+      "days_since_commit": 65,
+      "latest_commit_date": "2025-12-23T08:02:43Z",
+      "accessible": true
+    },
+    "https://github.com/TosinShada/tide-streaming": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/stellar-chef/stellar-chef": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/hyperledger/solang": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Xycloo/documents-marketplace-devenv": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/matusv/DYET": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/Alkeops/It-s-not-another-package": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/womenbiz": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Glo-Foundation/glo-wallet": {
+      "days_since_commit": 1,
+      "latest_commit_date": "2026-02-25T15:29:00Z",
+      "accessible": true
+    },
+    "https://github.com/liquify-validation": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/Argo-Navis-Dev/capacitor-passkey-plugin": {
+      "days_since_commit": 7,
+      "latest_commit_date": "2026-02-19T18:36:42Z",
+      "accessible": true
+    },
+    "https://github.com/hyperledger-labs/solang-playground": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/huitemagico/kmac": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/BlockShangerous/SNNAC": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    },
+    "https://github.com/jet-lab/polaris": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/orgs/QSTN-US/repositories": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": false
+    },
+    "https://github.com/aolieman/soroban-pre-order": {
+      "days_since_commit": 9999,
+      "latest_commit_date": "",
+      "accessible": true
+    }
+  }
+}
