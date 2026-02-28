@@ -24,10 +24,14 @@ PG Atlas powers the **Layer 1 Metric Gate** in the SCF's new three-layer decisio
 00_context/          Proposal PDF, full project brief, Jay's role & scope doc
 01_data/raw/         Original Airtable CSVs (do not modify)
 01_data/processed/   Cleaned extracts ready for use in deliverables
+01_data/real/        ★ Real API output CSVs (contributor_stats, dependency_edges, adoption_signals)
 02_analysis/         Intelligence briefs — deps.dev, data exploitation
 03_deliverables/     Per-deliverable design docs (A6, A7, A9, A10)
-04_implementation/   Algorithm sketches, prototype code
+04_implementation/   Production algorithm code + snapshots
+04_implementation/snapshots/  ★ Governance reports + EcosystemSnapshot JSON
+05_strategy/         NORTH_STAR.md — strategic compass
 06_demos/            Interactive prototypes and CLI tools (e.g., A6 graph simulation)
+pg_atlas/            ★ Production Python package (50 modules, 208 unit tests)
 ```
 
 ## Key Files
@@ -43,17 +47,58 @@ PG Atlas powers the **Layer 1 Metric Gate** in the SCF's new three-layer decisio
 | `01_data/processed/A5_all_active_with_github.csv` | 271 active projects with GitHub (broader graph seed) |
 | `01_data/processed/A6_github_orgs_seed.csv` | 78 GitHub orgs — root nodes for A6 registry crawlers |
 | `01_data/processed/A7_submission_github_repos.csv` | 338 submission-level repos for A7 git log parser |
+| `pg_atlas/WHAT_WAS_BUILT.md` | Complete technical reference for the production package |
 
-## Jay's Deliverables & Deadlines
+## Quick Start
+
+```bash
+# Install dependencies (Python 3.12)
+source .venv/bin/activate
+
+# Run the full pipeline (reads GITHUB_TOKEN from .env automatically)
+python -m pg_atlas run --scf-round "SCF Q2 2026"
+
+# Check output status
+python -m pg_atlas status
+
+# Run all unit tests
+python -m pytest pg_atlas/tests/ -x -q --ignore=pg_atlas/tests/test_integration_real_api.py
+```
+
+## Jay's Deliverables & Status
 
 | Deliverable | Tranche | Deadline | Status |
 |---|---|---|---|
-| A6 — Active Subgraph Projection (algorithm) | T2 | Mar 22 | Prototyped (`06_demos/01_active_subgraph_prototype`) |
-| A7 — Git Log Parser & Contributor Statistics | T2 | Mar 22 | Not started |
-| A9 — Criticality Scores + Pony Factor | T3 | Apr 12 | Prototyped (`06_demos/01_active_subgraph_prototype`) |
-| A10 — Adoption Signals Aggregation | T3 | Apr 12 | Prototyped (`06_demos/01_active_subgraph_prototype`) |
+| A6 — Active Subgraph Projection | T2 | Mar 22 | **Complete** — `pg_atlas/graph/active_subgraph.py`, 19 tests, verified on 304 real repos |
+| A7 — Git Log Parser & Contributor Statistics | T2 | Mar 22 | **Complete** — `pg_atlas/ingestion/git_log_parser.py`, 21 tests, 304 repos parsed, 161 contribution edges |
+| A9 — Criticality Scores + Pony Factor | T3 | Apr 12 | **Complete** — `pg_atlas/metrics/criticality.py` + `pony_factor.py`, 45 tests, 42 repos scored |
+| A10 — Adoption Signals Aggregation | T3 | Apr 12 | **Complete** — `pg_atlas/metrics/adoption.py`, 15 tests, npm/PyPI/GitHub signals normalized |
+
+**Bonus deliverables built:**
+- Layer 1 Metric Gate (2-of-3 voting with audit narratives)
+- Maintenance Debt Surface, Keystone Contributor Index, Funding Efficiency Ratio
+- EcosystemSnapshot governance report (longitudinal, JSON + Markdown export)
+- Interactive Plotly force-directed graph + Streamlit dashboard (stubs)
+- FastAPI analytics endpoints (8 endpoints, stub)
+- Checkpoint/resume ingestion orchestrator
+- 208 unit tests + 18 integration tests
+
+## Real Pipeline Results (2026-02-27, SCF Q2 2026)
+
+| Metric | Value |
+|---|---|
+| Repos parsed (A7) | 304 |
+| Contribution edges | 161 |
+| Dependency edges (crates.io) | 149 |
+| Active nodes (90-day window) | 262 |
+| Dormant nodes pruned | 372 |
+| Repos scored on all metrics | 42 |
+| Gate PASSED | **4 / 40 (10%)** |
+| Pony factor flagged | **34 / 40 (85%)** |
+
+**North Star Answer:** *The Metric Gate passes 10% of projects (4/40) for Expert Review. Pony factor risk is prevalent across 85% of active repos — a critical finding for SCF funding decisions in the Soroban ecosystem.*
 
 ## Critical Dependency
 
-**A2 (PostgreSQL schema, Alex's deliverable) must be locked before Jay can write any production graph code.**
-The `Repo`, `ExternalRepo`, and `depends_on` edge table definitions are the foundation for all of Jay's work.
+**A2 (PostgreSQL schema, Alex's deliverable) must be locked before production PostgreSQL integration can be completed.**
+The graph builder stub (`pg_atlas/graph/builder.py::build_graph_from_db()`) and sync module (`pg_atlas/graph/sync.py`) are ready to be wired to Alex's schema. Until then, all metric computation runs from CSV seed data + real API ingestion.
