@@ -14,7 +14,7 @@ Jay's deliverables:
 - **A9** — Criticality Scores + Pony Factor — T3, due ~Apr 12
 - **A10** — Adoption Signals Aggregation — T3, due ~Apr 12
 
-**Critical blocker**: A2 (PostgreSQL schema, owned by Alex) must be locked before production graph code can be written. PostgreSQL integration is stubbed in `pg_atlas/graph/sync.py` and `pg_atlas/graph/builder.py::build_graph_from_db()`.
+**Critical blocker**: A2 (PostgreSQL schema, owned by Alex) must be locked before production PostgreSQL integration can be completed. PostgreSQL integration is stubbed in `pg_atlas/graph/sync.py` and `pg_atlas/graph/builder.py::build_graph_from_db()`. Until then, metrics computation runs directly from CSV seed data and real API ingestion.
 
 ---
 
@@ -70,9 +70,10 @@ The `.venv` (Python 3.12) includes NetworkX, pandas, numpy, matplotlib, and Jupy
 01_data/processed/   Cleaned seed data ready for deliverables
 02_analysis/         Intelligence briefs on deps.dev API and Airtable data
 03_deliverables/     Deliverable artifacts (currently one .docx report)
-04_implementation/   Planned location for production algorithm code
+04_implementation/   Production algorithm generation scripts and snapshots
 05_strategy/         NORTH_STAR.md — strategic compass
-06_demos/            Prototype code and figures
+06_demos/            Interactive prototypes and CLI tools (e.g., A6 graph simulation)
+pg_atlas/            ★ Production Python package (50 modules, 208 unit tests)
 ```
 
 Key files to read before building anything:

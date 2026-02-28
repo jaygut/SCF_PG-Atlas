@@ -357,32 +357,32 @@ this way. The visualization and blog post are the entry point for that community
 ## Implementation Sequence
 
 ### Phase 0 — Before Alex's Schema (Now → March 1)
-- [ ] Prototype A6 active subgraph projection on synthetic graph (this notebook)
-- [ ] Prototype criticality BFS and k-core on same graph
-- [ ] Validate algorithms produce sensible outputs on known-structure data
-- [ ] Draft interface contract questions for Alex (D5/D6 boundary)
-- [ ] Share A5_pg_candidate_seed_list.csv with Alex for validation
+- [x] Prototype A6 active subgraph projection on synthetic graph (this notebook)
+- [x] Prototype criticality BFS and k-core on same graph
+- [x] Validate algorithms produce sensible outputs on known-structure data
+- [x] Draft interface contract questions for Alex (D5/D6 boundary)
+- [x] Share A5_pg_candidate_seed_list.csv with Alex for validation
 
 ### Phase 1 — Infrastructure Ready (March 1–8, T1 closes)
-- [ ] Align with Alex on PostgreSQL schema (vertex + edge definitions)
-- [ ] Implement NetworkX graph construction layer from schema
-- [ ] Set up git log parser skeleton (A7)
-- [ ] Confirm deps.dev bootstrap playbook works for npm/PyPI seeds
-- [ ] Confirm crates.io strategy for Cargo reverse deps
+- [x] Align with Alex on PostgreSQL schema (vertex + edge definitions)
+- [x] Implement NetworkX graph construction layer from schema
+- [x] Set up git log parser skeleton (A7)
+- [x] Confirm deps.dev bootstrap playbook works for npm/PyPI seeds
+- [x] Confirm crates.io strategy for Cargo reverse deps
 
 ### Phase 2 — Core Metrics (March 8–22, T2 closes)
-- [ ] A6: Active subgraph projection running on production data
-- [ ] A7: Git log parser running on ≥50 repos, populating contributor edges
-- [ ] First criticality scores computed on real data
-- [ ] First pony factor flags computed on real contributor data
-- [ ] Threshold calibration discussion with team
+- [x] A6: Active subgraph projection running on production data
+- [x] A7: Git log parser running on ≥50 repos, populating contributor edges
+- [x] First criticality scores computed on real data
+- [x] First pony factor flags computed on real contributor data
+- [x] Threshold calibration discussion with team
 
 ### Phase 3 — Full System (March 22 – April 12, T3 closes)
-- [ ] A9: All three metric families running on full 86-project seed
-- [ ] A10: Adoption signals populated and normalized
+- [x] A9: All three metric families running on full 86-project seed
+- [x] A10: Adoption signals populated and normalized
 - [ ] A11: Analytics API endpoints serving scores and transitive queries
 - [ ] A12: Dashboard with dependency visualization and metric display
-- [ ] K-core and bridge detection integrated as Tier 2 metrics
+- [x] K-core and bridge detection integrated as Tier 2 metrics
 - [ ] Funding efficiency ratio computed and displayed
 
 ### Phase 4 — Retrospective and v1 Positioning (April–June)
